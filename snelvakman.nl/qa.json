@@ -1,0 +1,43 @@
+{
+  "score": 84,
+  "sections": [
+    {
+      "name": "hero",
+      "score": 88
+    },
+    {
+      "name": "werkwijze",
+      "score": 82
+    },
+    {
+      "name": "diensten",
+      "score": 78,
+      "issue": "De zes dienstkaarten leunen op vlakke, lichtblauwe icoonvlakken die als placeholders ogen — dit is het meest template-achtige deel van de pagina. Vervang de icoonvlakken door echte werkfoto's per dienst (loodgieter, dakdekker, tegelzetter), of geef de iconen meer karakter en contrast, zodat het grid niet als een standaard AI-layout leest."
+    },
+    {
+      "name": "over-ons",
+      "score": 84
+    },
+    {
+      "name": "reviews",
+      "score": 90
+    },
+    {
+      "name": "werkgebied",
+      "score": 85
+    },
+    {
+      "name": "faq",
+      "score": 84
+    },
+    {
+      "name": "contact",
+      "score": 85
+    },
+    {
+      "name": "mobiel",
+      "score": 86
+    }
+  ],
+  "oordeel": "Een overduidelijke upgrade: de oude site heeft een gigantisch leeg middenvlak, kale tekstreviews en een gedateerde uitstraling, terwijl de mockup een strakke structuur, echte Google-reviews met 4.8-badge, volledig werkgebied en een nette FAQ toont — alle plaatsnamen en content van de oude site zijn overgenomen. Mobiel rendert schoon zonder horizontaal scrollen en met goed stapelende secties. Enige echte zwakte is het dienstengrid met vlakke placeholder-achtige icoonvlakken; met echte werkfoto's daar zou dit richting de 90 gaan, maar ook nu is het een no-brainer voor de eigenaar."
+}
