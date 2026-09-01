@@ -1,0 +1,60 @@
+{
+  "accent": "#1B7EC2",
+  "cta": "#E8611C",
+  "logoFile": "img01.png",
+  "heroPhoto": "img05.jpg",
+  "aboutPhoto": "img09.jpg",
+  "heroTitle": "Direct een vakman in Eindhoven en omgeving",
+  "heroSub": "Stuur een foto of filmpje van uw klus via WhatsApp en ontvang direct een kostenschatting. Bij akkoord komen wij vaak dezelfde dag nog langs.",
+  "usps": [
+    "Vaak dezelfde dag geholpen",
+    "24/7 bereikbaar via WhatsApp",
+    "4.8 ★ op Google — 494 reviews"
+  ],
+  "services": [
+    {
+      "title": "Loodgieter",
+      "desc": "Van lekkage in badkamer, keuken of toilet tot het verleggen van leidingen — snel en vakkundig opgelost.",
+      "photo": "img07.jpg",
+      "icon": "droplet"
+    },
+    {
+      "title": "Elektricien",
+      "desc": "Voor het verleggen van stopcontacten en al uw elektrawerk in huis.",
+      "photo": null,
+      "icon": "bolt"
+    },
+    {
+      "title": "Timmerman",
+      "desc": "Vakkundig timmerwerk voor kleine klussen én groter verbouwwerk.",
+      "photo": null,
+      "icon": "wrench"
+    },
+    {
+      "title": "Tegelzetter",
+      "desc": "Strak tegelwerk in badkamer, keuken of toilet, ook bij complete renovaties.",
+      "photo": null,
+      "icon": "bath"
+    },
+    {
+      "title": "Dakdekker",
+      "desc": "Voor dakwerk en het isoleren van uw dak.",
+      "photo": null,
+      "icon": "home"
+    },
+    {
+      "title": "Hovenier",
+      "desc": "Voor het onderhoud en de aanpak van uw tuin.",
+      "photo": null,
+      "icon": "leaf"
+    }
+  ],
+  "aboutTitle": "Klus snel geregeld",
+  "aboutText": "Een goede vakman vinden is tegenwoordig lastig, en lange wachttijden zijn eerder regel dan uitzondering. Niet bij Snelvakman: ons team van vakmannen staat klaar voor spoedklussen én groter werk, van een lekkage tot een complete badkamer- of toiletrenovatie. Via WhatsApp bent u rechtstreeks met ons in contact en ontvangt u vooraf een schatting van de kosten. Wij werken in Eindhoven en de hele regio, van Veldhoven en Geldrop tot Helmond en Valkenswaard.",
+  "checklist": [
+    "Stuur een foto of filmpje van het probleem via WhatsApp",
+    "U ontvangt vooraf een schatting van de kosten",
+    "Bij akkoord komen wij vaak dezelfde dag langs",
+    "Actief in Eindhoven en de hele regio"
+  ]
+}
