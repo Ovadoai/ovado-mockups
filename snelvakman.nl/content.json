@@ -1,60 +1,266 @@
 {
-  "accent": "#1B7EC2",
-  "cta": "#E8611C",
-  "logoFile": "img01.png",
-  "heroPhoto": "img05.jpg",
-  "aboutPhoto": "img09.jpg",
-  "heroTitle": "Direct een vakman in Eindhoven en omgeving",
-  "heroSub": "Stuur een foto of filmpje van uw klus via WhatsApp en ontvang direct een kostenschatting. Bij akkoord komen wij vaak dezelfde dag nog langs.",
-  "usps": [
-    "Vaak dezelfde dag geholpen",
-    "24/7 bereikbaar via WhatsApp",
-    "4.8 ★ op Google — 494 reviews"
-  ],
-  "services": [
-    {
-      "title": "Loodgieter",
-      "desc": "Van lekkage in badkamer, keuken of toilet tot het verleggen van leidingen — snel en vakkundig opgelost.",
-      "photo": "img07.jpg",
-      "icon": "droplet"
+  "out": {
+    "accent": "#1581C6",
+    "cta": "#E8611A",
+    "logoFile": "img01.png",
+    "heroPhoto": "img06.jpg",
+    "aboutPhoto": "img02.webp",
+    "heroTitle": "Direct een vakman voor uw klus in Eindhoven",
+    "heroSub": "Lekkage, verstopping, dak, elektra of schilderwerk? Stuur een foto of filmpje via WhatsApp, ontvang snel een kostenschatting en vaak komen wij dezelfde dag nog langs.",
+    "usps": [
+      "Vaak dezelfde dag geholpen",
+      "24/7 bereikbaar via WhatsApp",
+      "Groot team ervaren vakmannen"
+    ],
+    "services": [
+      {
+        "title": "Loodgieter",
+        "slug": "loodgieter",
+        "desc": "Lekkages, verstoppingen, leidingwerk en sanitair — met spoedservice in Eindhoven en omgeving.",
+        "photo": "img04.webp",
+        "icon": "droplet"
+      },
+      {
+        "title": "Elektricien",
+        "slug": "elektricien",
+        "desc": "Van groepenkast tot laadpaal: aanleg, reparatie en het verhelpen van storingen, 24/7 bereikbaar bij spoed.",
+        "photo": null,
+        "icon": "bolt"
+      },
+      {
+        "title": "Dakdekker",
+        "slug": "dakdekker",
+        "desc": "Daklekkage, dakreparatie, dakrenovatie en isolatie — lekkages vaak binnen 1 dag opgelost.",
+        "photo": null,
+        "icon": "home"
+      },
+      {
+        "title": "Schilder",
+        "slug": "schilder",
+        "desc": "Binnen- en buitenschilderwerk: muren, plafonds, kozijnen, deuren, trappen en meer.",
+        "photo": null,
+        "icon": "wrench"
+      },
+      {
+        "title": "Tegelzetter",
+        "slug": "tegelzetter",
+        "desc": "Tegelwerk voor badkamer, keuken en vloer, ook voor het vervangen van kapotte tegels.",
+        "photo": "img08.jpg",
+        "icon": "bath"
+      },
+      {
+        "title": "Hovenier & bestrating",
+        "slug": "hovenier",
+        "desc": "Tuinonderhoud, snoeiwerk en bestrating van tuin, oprit en straatwerk in Eindhoven en regio.",
+        "photo": null,
+        "icon": "leaf"
+      }
+    ],
+    "process": {
+      "title": "Zo werkt het",
+      "steps": [
+        {
+          "title": "Stuur uw klus via WhatsApp",
+          "desc": "Stuur een duidelijke foto of filmpje van het probleem of uw klus via WhatsApp."
+        },
+        {
+          "title": "Ontvang een kostenschatting",
+          "desc": "Wij bekijken uw situatie en u ontvangt snel een schatting van de kosten."
+        },
+        {
+          "title": "Vaak dezelfde dag opgelost",
+          "desc": "Bent u akkoord? Dan plannen we de klus in en komen we vaak dezelfde dag nog langs om het op te lossen."
+        }
+      ]
     },
-    {
-      "title": "Elektricien",
-      "desc": "Voor het verleggen van stopcontacten en al uw elektrawerk in huis.",
-      "photo": null,
-      "icon": "bolt"
-    },
-    {
-      "title": "Timmerman",
-      "desc": "Vakkundig timmerwerk voor kleine klussen én groter verbouwwerk.",
-      "photo": null,
-      "icon": "wrench"
-    },
-    {
-      "title": "Tegelzetter",
-      "desc": "Strak tegelwerk in badkamer, keuken of toilet, ook bij complete renovaties.",
-      "photo": null,
-      "icon": "bath"
-    },
-    {
-      "title": "Dakdekker",
-      "desc": "Voor dakwerk en het isoleren van uw dak.",
-      "photo": null,
-      "icon": "home"
-    },
-    {
-      "title": "Hovenier",
-      "desc": "Voor het onderhoud en de aanpak van uw tuin.",
-      "photo": null,
-      "icon": "leaf"
-    }
-  ],
-  "aboutTitle": "Klus snel geregeld",
-  "aboutText": "Een goede vakman vinden is tegenwoordig lastig, en lange wachttijden zijn eerder regel dan uitzondering. Niet bij Snelvakman: ons team van vakmannen staat klaar voor spoedklussen én groter werk, van een lekkage tot een complete badkamer- of toiletrenovatie. Via WhatsApp bent u rechtstreeks met ons in contact en ontvangt u vooraf een schatting van de kosten. Wij werken in Eindhoven en de hele regio, van Veldhoven en Geldrop tot Helmond en Valkenswaard.",
-  "checklist": [
-    "Stuur een foto of filmpje van het probleem via WhatsApp",
-    "U ontvangt vooraf een schatting van de kosten",
-    "Bij akkoord komen wij vaak dezelfde dag langs",
-    "Actief in Eindhoven en de hele regio"
-  ]
+    "aboutTitle": "Al uw klussen, één aanspreekpunt",
+    "aboutText": "Een goede vakman vinden is tegenwoordig lastig: rondbellen, offertes vergelijken en lange wachttijden zijn eerder regel dan uitzondering. Bij Snelvakman is dat verleden tijd — dankzij ons grote team en netwerk van erkende vakmannen en bouwbedrijven staat er altijd snel iemand voor u klaar, op een moment dat ú uitkomt. We zijn 7 dagen per week van 08:00 tot 20:00 bereikbaar, met Mo als uw vaste contactpersoon. Naast loodgieters, elektriciens, dakdekkers, schilders, tegelzetters en hoveniers regelen wij ook stukadoors, timmermannen en metselaars — van kleine klus tot complete badkamer- of toiletrenovatie. En pas als u tevreden bent met ons aanbod, begint het echte werk.",
+    "checklist": [
+      "7 dagen per week bereikbaar van 08:00 tot 20:00",
+      "Gratis prijsindicatie via WhatsApp",
+      "Groot netwerk van erkende vakmannen en klusbedrijven",
+      "Het werk begint pas als u akkoord bent met ons aanbod"
+    ],
+    "reviewIndices": [],
+    "siteTestimonials": [
+      {
+        "name": "paul",
+        "stars": 5,
+        "text": "Onze toilet is in een week gerenoveerd naar volle tevredenheid. Goede en vriendelijke vakmensen en communicatie via wattsapp efficient en altijd prompte reactie. Zeer aan te bevelen"
+      },
+      {
+        "name": "Nas",
+        "stars": 5,
+        "text": "Wij worden heel snel geholpen 🙏"
+      },
+      {
+        "name": "Paul Witlox",
+        "stars": 5,
+        "text": "Na een hele dag zonder water en toilet wilde Karim, ondanks het late tijdstip (19.00 uur) en de onmogelijke klus niet weg voordat de klus geklaard was. Top monteur en 5 sterren is niet genoeg. Hartstikke bedankt en dikke duim omhoog."
+      },
+      {
+        "name": "Halima",
+        "stars": 5,
+        "text": "Ben blij met mijn nieuwe badkamer. Bedankt de top service en begeleiding bij het vernieuwen van mijn badkamer."
+      },
+      {
+        "name": "Joey",
+        "stars": 5,
+        "text": "snel en vakkundig werk!"
+      },
+      {
+        "name": "Marion Koenders",
+        "stars": 5,
+        "text": "Dit schildersbedrijf kon onze woning direct instap klaar maken. Ze zijn hun woord nagekomen en wij konden volgens planning verhuizen. Super fijn!"
+      },
+      {
+        "name": "Dirk Bruinsma",
+        "stars": 5,
+        "text": "Via Snelvakman een fijne en betrouwbare schilder voor binnenwerk ingeschakeld. Prima werk geleverd voor een prima prijs."
+      },
+      {
+        "name": "Lisa de Bruijn",
+        "stars": 5,
+        "text": "Plafond geschilderd. Zaten overal donkere plekken. Ziet er nu netjes wit uit."
+      },
+      {
+        "name": "Irma Dekkers",
+        "stars": 5,
+        "text": "We hadden een schilder in Eindhoven nodig. Een beetje rond gezocht en kwam hier uit. Een afspraak gemaakt. Nadat de schilder een kijkje kwam doen en de kosten doorgegeven gingen wij akkoord. Ingepland wanneer ze konden beginnen. Op de afgesproken dag waren ze klaar. Het schilderwerk ziet er keurig uit. Ben ze dankbaar voor de service die we hebben gehad."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Hoe snel kunnen jullie langskomen?",
+        "a": "Bij spoed vaak dezelfde dag. Stuur een foto of filmpje van het probleem via WhatsApp; na uw akkoord op de kostenschatting komen wij vaak dezelfde dag nog langs. Daklekkages lossen we vaak binnen 1 dag op."
+      },
+      {
+        "q": "Wat zijn jullie openingstijden?",
+        "a": "Wij staan 7 dagen per week van 08:00 tot 20:00 voor u klaar om uw klus aan te nemen. Via onze WhatsApp-service zijn we bovendien 24/7 bereikbaar voor spoedgevallen."
+      },
+      {
+        "q": "Hoe krijg ik een prijsindicatie?",
+        "a": "Stuur uw klus gratis via WhatsApp, het liefst met een duidelijke foto of filmpje. U ontvangt snel een schatting van de kosten op maat — pas als u tevreden bent met ons aanbod, beginnen we met het echte werk."
+      },
+      {
+        "q": "In welk gebied zijn jullie werkzaam?",
+        "a": "Wij werken in Eindhoven en de wijde regio, van Veldhoven, Best en Helmond tot Den Bosch en Tilburg. Als hovenier en stratenmaker zijn we daarnaast actief in de regio's Tilburg, Breda, Den Bosch en Helmond. Woont u net buiten deze plaatsen? Geen probleem — wij zijn flexibel inzetbaar in de hele regio."
+      },
+      {
+        "q": "Kan ik ook voor andere klussen bij jullie terecht?",
+        "a": "Ja. Naast loodgieters-, elektra-, dak-, schilder-, tegel- en hovenierswerk regelen wij ook stukadoors (voor spachtelputs, raapwerk, pleisterwerk en spackspuitwerk), timmermannen en metselaars — van het verleggen van stopcontacten tot een complete badkamer- of toiletrenovatie."
+      }
+    ],
+    "areas": [
+      "Eindhoven",
+      "Helmond",
+      "Veldhoven",
+      "Valkenswaard",
+      "Best",
+      "Mierlo Hout",
+      "Deurne",
+      "Den Bosch",
+      "Gerwen",
+      "Gemert",
+      "Geldrop",
+      "Hilvarenbeek",
+      "Maarheeze",
+      "Nuenen",
+      "Aalst",
+      "Asten",
+      "Bergeijk",
+      "Veghel",
+      "Vught",
+      "Waalre",
+      "Waalwijk",
+      "Stiphout",
+      "Oirschot",
+      "Wintelre",
+      "Oerle",
+      "Heeze",
+      "Leende",
+      "Brandevoort",
+      "Lieshout",
+      "Aarle-Rixtel",
+      "Reusel",
+      "Someren",
+      "Son en Breugel",
+      "Sint-Oedenrode",
+      "Tilburg",
+      "Breda"
+    ],
+    "servicePages": [
+      {
+        "slug": "loodgieter",
+        "title": "Loodgieter in Eindhoven en omgeving",
+        "intro": "Van spoedlekkage tot complete verbouwing: voor bijna al het loodgieterswerk in Eindhoven en omgeving bent u bij Snelvakman aan het juiste adres.",
+        "paragraphs": [
+          "Bent u van plan om te gaan verbouwen of heeft u een lekkage die met spoed moet worden opgelost? Of het nu om een kleine klus gaat of een groot loodgietersproject: onze loodgieters helpen u snel en vakkundig. Een lekkage in de keuken zorgt voor wateroverlast en kan grote schade aanbrengen — onze loodgieter komt u meteen helpen. Ook een lekkende radiator lossen we voor u op, en een lekkage in de badkamer sporen onze ervaren experts snel op, vaak zonder hak- en breekwerk.",
+          "Ook voor verstoppingen kunt u direct bij ons terecht. Komt het water in uw toilet omhoog, dan komt onze spoedservice u direct helpen — zeker vervelend als het uw enige toilet is. Loopt het water niet of slecht weg, dan ontstoppen wij uw riool of afvoer. En een verstopt doucheputje door haren en zeepresten? Als het verwijderen van resten niet helpt, schakelt u ons meteen in.",
+          "Daarnaast kunt u bij Snelvakman terecht voor het repareren of vervangen van leidingen in uw badkamer en het onderhoud van uw verwarmingsinstallatie, CV-ketel, geiser, boiler, kraan of riolering. Ook rioleringsproblemen lossen we snel voor u op.",
+          "Ontdekt u een daklekkage — regenwater langs de muren, vocht- of schimmelplekken op het plafond of kapotte dakpannen op straat — wacht dan niet: daklekkage kan behoorlijke schade aan uw woning aanrichten, en zelfs één gebroken dakpan zorgt bij een fikse regenbui al voor flinke wateroverlast. Neem direct contact op, dan staat er zo snel mogelijk een vakman bij u op locatie."
+        ],
+        "photo": "img10.jpg"
+      },
+      {
+        "slug": "elektricien",
+        "title": "Elektricien in Eindhoven",
+        "intro": "Direct een elektricien nodig? Via onze WhatsApp-service zijn we 24/7 bereikbaar voor spoedgevallen en vinden we altijd een vakman op een moment dat ú uitkomt.",
+        "paragraphs": [
+          "Een goede elektricien vinden is op zich al een heel karwei: rondbellen, offertes aanvragen, vergelijken en lange wachtlijsten. Bij Snelvakman is dat verleden tijd. Dankzij ons grote netwerk vinden we altijd een vakman die langs kan komen op een moment dat u goed uitkomt — ook als u met spoed een elektricien nodig heeft. Stuur uw klus gratis via WhatsApp voor een prijsindicatie op maat en de rest regelen wij.",
+          "U kunt onze elektriciens inschakelen voor uiteenlopende werkzaamheden: het installeren van nieuwe elektrische apparaten, het uitbreiden van de meterkast met extra stoppen, het omzetten van en naar krachtstroom of het verplaatsen van stopcontacten. Voldoet de elektriciteit in uw oudere woning niet meer aan de hedendaagse eisen, dan moderniseren we de volledige stroomvoorziening.",
+          "Bij een aanbouw of nieuwe woning verzorgen we de aanleg van nieuwe elektra: de vakman weet precies welke meterkast er nodig is en of extra groepen raadzaam zijn, en zorgt dat de installatie veilig is zodat de kans op storing of kortsluiting wordt uitgesloten. Werkt de elektriciteit niet naar behoren of heeft u kortsluiting? Dan inspecteren we de oorzaak en leveren we langdurige oplossingen, zodat u niet bang hoeft te zijn voor nieuwe kortsluiting of brand. Ook voor krachtstroom — voor een laadpaal, zware apparaten of een jacuzzi — maken we uw meterkast en woning geschikt.",
+          "Verder kunt u bij ons terecht voor de groepenkast (vervangen of uitbreiden), aardlekschakelaars, het repareren of (ver)plaatsen van stopcontacten, het plaatsen van een laadpaal, reparatie van witgoed en het (ver)plaatsen van verlichting."
+        ],
+        "photo": null
+      },
+      {
+        "slug": "dakdekker",
+        "title": "Dakdekker Eindhoven: daklekkage, reparatie en renovatie",
+        "intro": "Specialist in daklekkage, dakreparatie en dakrenovatie — met snelle service in Eindhoven en omgeving, vaak nog dezelfde dag.",
+        "paragraphs": [
+          "Heeft u te maken met een daklekkage, verouderde dakbedekking of stormschade in de regio Eindhoven? Een professioneel dak beschermt uw huis, verhoogt de waarde én bespaart op energiekosten. U kunt rekenen op snelle service bij spoed, transparante prijzen, 10+ jaar ervaring in Eindhoven, gecertificeerde dakdekkers en een directe dakinspectie bij uw offerte-aanvraag. Als lokale dakdekker kennen wij het klimaat en de woningtypes: of u nu in Woensel, Stratum, Tongelre of Meerhoven woont, van platte daken in nieuwbouwwijken tot oude pannendaken in negentiende-eeuwse buurten. Daarbij profiteert u van lage of geen voorrijkosten, lokale referenties, persoonlijk contact en nazorg, en kennis van de gemeentelijke bouwregels.",
+          "Een daklekkage is vervelend én gevaarlijk: hoe langer u wacht, hoe groter de schade aan muren, plafonds en isolatie. Veelvoorkomende oorzaken zijn gescheurde dakbedekking (bitumen, EPDM), losliggende of gebroken dakpannen, verouderde loodslabben of dakgoten, verstopte regenafvoeren en slechte afwerking bij dakkapellen of schoorstenen. Wij lossen de lekkage vaak binnen 1 dag op — vraag direct een spoedreparatie aan of bel voor een vrijblijvende inspectie.",
+          "Niet elk dakprobleem vereist een complete renovatie: vaak is een gerichte dakreparatie voldoende om uw dak weer jaren mee te laten gaan. Wij vervangen en leggen dakpannen vast, dichten scheuren in bitumen daken, herstellen naden van EPDM-daken, vernieuwen loodslabben rond schoorstenen, herstellen boeidelen en dakranden en maken dakgoten schoon of vervangen ze. Met een kleine reparatie voorkomt u vaak een complete dakrenovatie.",
+          "Is uw dak ouder dan 25 jaar, heeft u terugkerende lekkages of wilt u beter isoleren? Dan is het tijd voor een dakrenovatie. Wij verzorgen complete dakrenovaties in Eindhoven en omgeving: het verwijderen van de oude dakbedekking, het controleren en herstellen van de dakconstructie, het aanbrengen van hoogwaardige isolatie, nieuw dakmateriaal (EPDM, bitumen of dakpannen) en een waterdichte afwerking. Wij gebruiken alleen A-kwaliteit materialen met 10 tot 25 jaar garantie."
+        ],
+        "photo": null
+      },
+      {
+        "slug": "schilder",
+        "title": "Schilder in Eindhoven en omgeving",
+        "intro": "Huisschilder of buitenschilder nodig? Wij vinden altijd een professionele schilder voor uw klus — snel geregeld via WhatsApp.",
+        "paragraphs": [
+          "Een goede schilder vinden is niet makkelijk: offertes aanvragen laat vaak lang op zich wachten, vergelijken is lastig en wanneer de schilder tijd heeft, komt het u misschien niet uit. Omdat veel mensen hier tegenaan lopen, hebben we een speciale service opgericht die u al dat werk uit handen neemt.",
+          "Dankzij ons grote netwerk van klussers en schildersbedrijven hebben we altijd een schilder die langs kan komen voor uw klus. Wij weten precies waar we op moeten letten bij het vinden van een goede schilder en kiezen uit de beste deals, zodat er altijd een aanbod is dat bij u past. Stuur uw klus gratis via WhatsApp — pas als u tevreden bent met ons aanbod, begint het echte werk.",
+          "U kunt bij ons terecht voor al het binnen- en buitenschilderwerk in Eindhoven en omgeving: muren en plafonds schilderen, kozijnen, deuren en trappen, plinten, keuken en badkamer, meubels schilderen en zelfs behangen."
+        ],
+        "photo": null
+      },
+      {
+        "slug": "tegelzetter",
+        "title": "Tegelzetter in Eindhoven",
+        "intro": "Een goede tegelzetter vinden zonder rondbellen en wachtlijsten? Snelvakman regelt het — stuur uw klus via WhatsApp voor een prijsindicatie op maat.",
+        "paragraphs": [
+          "Een goede tegelzetter vinden is niet altijd even makkelijk: rondbellen, offertes aanvragen, vergelijken en lange wachtlijsten. Vaak wordt een afspraak ingepland wanneer de tegelzetter tijd heeft, in plaats van wanneer het ú uitkomt. Snelvakman haalt u dat werk uit handen: door onze efficiënte klusservice en ons grote netwerk aan klussers en bouwbedrijven vinden we altijd snel een tegelzetter die langs kan komen voor uw klus.",
+          "Wij weten precies waar we op moeten letten bij een goede tegelzetter en vergelijken voor u de beste deals, zodat er altijd een aanbod is dat bij u past. Stuur uw klus gratis via WhatsApp voor een prijsindicatie op maat — pas als u tevreden bent met ons aanbod, begint het echte werk.",
+          "U kunt bij ons terecht voor al het tegelwerk in Eindhoven en omgeving: badkamertegels en keukentegels, het vervangen van een complete tegelvloer en het vervangen van kapotte tegels."
+        ],
+        "photo": null
+      },
+      {
+        "slug": "hovenier",
+        "title": "Hovenier en stratenmaker in Eindhoven en regio",
+        "intro": "Tuinman, klein tuinonderhoud of een stratenmaker nodig? Grote of kleine klus — wij pakken het direct op en ronden het snel af.",
+        "paragraphs": [
+          "Bent u op zoek naar een betrouwbare tuinman voor klein tuinonderhoud, snoeiwerk of tuinverlichting, of juist een stratenmaker in Eindhoven of omgeving? Bij Snelvakman helpen we u snel met bestrating van tuin, oprit en straatwerk. We werken dagelijks in Eindhoven, Veldhoven, Best, Geldrop, Nuenen, Son en Breugel, Waalre en Helmond — en woont u net buiten deze plaatsen, dan zijn we flexibel inzetbaar in de hele regio.",
+          "Wilt u uw tuin laten bestraten voor meer comfort en een strakke uitstraling? Onze stratenmakers verzorgen volledige tuinbestrating, sierbestrating en functionele bestrating, herbestrating van bestaande tuinen en zowel kleine als grote tuinprojecten. Wij werken netjes en efficiënt en zorgen dat uw tuin snel weer bruikbaar is.",
+          "Een oprit moet tegen een stootje kunnen. Wij bestraten nieuwe opritten, vervangen of herstellen bestaande opritten, lossen verzakte bestrating op en maken uw oprit geschikt voor zwaar verkeer. Is uw bestrating verzakt, ongelijk of beschadigd? Ook straatwerk opnieuw leggen, tegels rechtleggen, kleine herstelklussen en het vervangen van oude bestrating verzorgen we — geen klus is te klein.",
+          "Naast Eindhoven zijn we als stratenmaker ook actief in de regio's Tilburg, Breda, Den Bosch en Helmond. Stuur een foto van uw tuin of oprit via WhatsApp en u ontvangt snel duidelijkheid over beschikbaarheid en planning."
+        ],
+        "photo": null
+      }
+    ]
+  },
+  "reviews": []
 }

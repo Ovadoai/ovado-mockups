@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Hovenier en stratenmaker in Eindhoven en regio — Snelvakman Eindhoven</title>
+<meta name="description" content="Tuinman, klein tuinonderhoud of een stratenmaker nodig? Grote of kleine klus — wij pakken het direct op en ronden het snel af.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --accent: #1581C6;
+    --accent-dark: color-mix(in srgb, #1581C6 76%, black);
+    --accent-soft: color-mix(in srgb, #1581C6 9%, white);
+    --cta: #E8611A;
+    --cta-dark: color-mix(in srgb, #E8611A 82%, black);
+    --ink: #0f1720; --body: #3d4854; --muted: #66717d;
+    --bg: #fafaf9; --card: #ffffff; --line: #e7eaed;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', -apple-system, sans-serif; color: var(--body); background: var(--bg);
+    line-height: 1.65; font-size: 16px; -webkit-font-smoothing: antialiased; }
+  h1, h2, h3 { font-family: 'Sora', 'Inter', sans-serif; color: var(--ink); letter-spacing: -0.022em; }
+  img { max-width: 100%; display: block; }
+  a, button, summary { cursor: pointer; }
+  a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px solid var(--cta); outline-offset: 3px; border-radius: 6px; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+  .btn { display: inline-flex; align-items: center; gap: 10px; padding: 15px 28px; border-radius: 12px;
+    font-weight: 700; font-size: 15.5px; text-decoration: none; transition: transform .18s ease, box-shadow .18s ease, background .18s ease; }
+  .btn:hover { transform: translateY(-2px); }
+  .btn-cta { background: var(--cta); color: #fff; box-shadow: 0 8px 22px color-mix(in srgb, var(--cta) 38%, transparent); }
+  .btn-cta:hover { background: var(--cta-dark); }
+  .btn-outline-light { border: 1.5px solid rgba(255,255,255,0.6); color: #fff; }
+  .btn-outline-light:hover { background: rgba(255,255,255,0.12); }
+  .btn-white { background: #fff; color: var(--accent-dark); }
+  .btn-white:hover { background: #f1f3f5; }
+  .kicker { display: inline-block; color: var(--accent); font-weight: 700; text-transform: uppercase;
+    font-size: 12.5px; letter-spacing: 0.1em; margin-bottom: 12px; }
+  section { padding: 92px 0; }
+  h2 { font-size: clamp(27px, 3.7vw, 38px); margin-bottom: 14px; }
+  .lead-p { color: var(--muted); max-width: 620px; margin-bottom: 46px; font-size: 17px; }
+
+  .topbar { background: var(--accent-dark); color: rgba(255,255,255,0.92); font-size: 13.5px; }
+  .topbar .wrap { display: flex; justify-content: space-between; gap: 12px; padding: 8px 24px; flex-wrap: wrap; }
+  .topbar a { color: #fff; text-decoration: none; font-weight: 600; display: inline-flex; gap: 7px; align-items: center; }
+  header { background: rgba(255,255,255,0.96); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 40; }
+  header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 12px 24px; }
+  .brand { display: flex; align-items: center; text-decoration: none; }
+  .brand img { max-height: 48px; max-width: 220px; object-fit: contain; }
+  .wordmark { font-family: 'Sora'; font-weight: 800; font-size: 21px; color: var(--ink); }
+  .wordmark em { color: var(--accent); font-style: normal; }
+  nav.main { display: flex; gap: 26px; font-weight: 600; font-size: 15px; }
+  nav.main a { color: var(--body); text-decoration: none; padding: 6px 2px; border-bottom: 2px solid transparent;
+    transition: color .18s, border-color .18s; }
+  nav.main a:hover, nav.main a.on { color: var(--accent); border-color: var(--accent); }
+  @media (max-width: 920px) { nav.main { display: none; } }
+
+  .ctaband { background: linear-gradient(115deg, var(--accent), var(--accent-dark)); color: #fff; }
+  .ctaband .wrap { display: flex; align-items: center; justify-content: space-between; gap: 22px;
+    padding: 56px 24px; flex-wrap: wrap; }
+  .ctaband h2 { color: #fff; margin: 0; font-size: clamp(24px, 3vw, 32px); }
+  .ctaband p { color: rgba(255,255,255,0.85); margin-top: 6px; }
+
+  footer { background: var(--ink); color: #97a2ac; font-size: 14px; }
+  footer .wrap { display: flex; justify-content: space-between; gap: 12px; padding: 28px 24px; flex-wrap: wrap; }
+  footer a { color: #c6cdd3; text-decoration: none; }
+
+  .stickycall { position: fixed; left: 0; right: 0; bottom: 0; z-index: 60; display: none;
+    background: var(--cta); padding: 12px 16px calc(12px + env(safe-area-inset-bottom)); text-align: center; }
+  .stickycall a { color: #fff; font-weight: 800; font-size: 16.5px; text-decoration: none;
+    display: inline-flex; gap: 10px; align-items: center; }
+  @media (max-width: 880px) { .stickycall { display: block; } body { padding-bottom: 58px; } }
+
+  .rv { opacity: 0; transform: translateY(14px); transition: opacity .45s ease, transform .45s ease; }
+  .rv.in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .rv { opacity: 1; transform: none; transition: none; }
+    .btn { transition: none; }
+  }
+  .subhero { background: linear-gradient(115deg, var(--accent), var(--accent-dark)); color: #fff; }
+  .subhero .wrap { padding: 72px 24px; }
+  .subhero .crumb { font-size: 14px; margin-bottom: 14px; }
+  .subhero .crumb a { color: rgba(255,255,255,0.85); text-decoration: none; }
+  .subhero h1 { color: #fff; font-size: clamp(30px, 4.4vw, 44px); margin-bottom: 12px; }
+  .subhero p { color: rgba(255,255,255,0.88); font-size: 18px; max-width: 620px; }
+  .article { display: grid; grid-template-columns: 1.4fr 1fr; gap: 64px; align-items: start; }
+  .article .txt p { margin-bottom: 18px; font-size: 16px; }
+  .side { position: sticky; top: 96px; }
+  .side .photo { border-radius: 18px; overflow: hidden; box-shadow: 0 16px 40px rgba(15,23,32,0.13); margin-bottom: 22px; }
+  .side .photo img { width: 100%; height: 260px; object-fit: cover; }
+  .sidecard { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 28px; }
+  .sidecard h3 { font-size: 17px; margin-bottom: 14px; }
+  .checklist { list-style: none; }
+  .checklist li { display: flex; gap: 12px; align-items: flex-start; margin-bottom: 12px;
+    font-weight: 600; color: var(--ink); font-size: 14.5px; }
+  .checklist .ci { color: var(--accent); flex: none; margin-top: 2px; }
+  @media (max-width: 880px) { .article { grid-template-columns: 1fr; gap: 36px; } .side { position: static; } }</style>
+</head>
+<body>
+
+<div class="topbar"><div class="wrap">
+  <span>Actief in Eindhoven en omgeving</span>
+  <a href="tel:+31850204545"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c1 .3 2 .5 3 .6a2 2 0 0 1 1.6 2z"/></svg> +31850204545</a>
+</div></div>
+<header><div class="wrap">
+  <a class="brand" href="../../index.html" aria-label="Snelvakman">
+    <img src="../../assets/img01.png" alt="Snelvakman">
+  </a>
+  <nav class="main" aria-label="Hoofdmenu">
+    <a href="../../index.html#diensten" class="on">Diensten</a>
+    <a href="../../index.html#werkwijze">Werkwijze</a>
+    <a href="../../index.html#over">Over ons</a>
+    <a href="../../index.html#reviews">Reviews</a>
+    <a href="../../index.html#contact">Contact</a>
+  </nav>
+  <a class="btn btn-cta" href="tel:+31850204545"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c1 .3 2 .5 3 .6a2 2 0 0 1 1.6 2z"/></svg> Bel direct</a>
+</div></header>
+
+<div class="subhero"><div class="wrap">
+  <div class="crumb"><a href="../../index.html">← Terug naar overzicht</a></div>
+  <h1>Hovenier en stratenmaker in Eindhoven en regio</h1>
+  <p>Tuinman, klein tuinonderhoud of een stratenmaker nodig? Grote of kleine klus — wij pakken het direct op en ronden het snel af.</p>
+</div></div>
+
+<section><div class="wrap"><div class="article">
+  <div class="txt">
+    <p class="rv">Bent u op zoek naar een betrouwbare tuinman voor klein tuinonderhoud, snoeiwerk of tuinverlichting, of juist een stratenmaker in Eindhoven of omgeving? Bij Snelvakman helpen we u snel met bestrating van tuin, oprit en straatwerk. We werken dagelijks in Eindhoven, Veldhoven, Best, Geldrop, Nuenen, Son en Breugel, Waalre en Helmond — en woont u net buiten deze plaatsen, dan zijn we flexibel inzetbaar in de hele regio.</p>
+    <p class="rv">Wilt u uw tuin laten bestraten voor meer comfort en een strakke uitstraling? Onze stratenmakers verzorgen volledige tuinbestrating, sierbestrating en functionele bestrating, herbestrating van bestaande tuinen en zowel kleine als grote tuinprojecten. Wij werken netjes en efficiënt en zorgen dat uw tuin snel weer bruikbaar is.</p>
+    <p class="rv">Een oprit moet tegen een stootje kunnen. Wij bestraten nieuwe opritten, vervangen of herstellen bestaande opritten, lossen verzakte bestrating op en maken uw oprit geschikt voor zwaar verkeer. Is uw bestrating verzakt, ongelijk of beschadigd? Ook straatwerk opnieuw leggen, tegels rechtleggen, kleine herstelklussen en het vervangen van oude bestrating verzorgen we — geen klus is te klein.</p>
+    <p class="rv">Naast Eindhoven zijn we als stratenmaker ook actief in de regio's Tilburg, Breda, Den Bosch en Helmond. Stuur een foto van uw tuin of oprit via WhatsApp en u ontvangt snel duidelijkheid over beschikbaarheid en planning.</p>
+    <a class="btn btn-cta rv" style="margin-top:14px" href="tel:+31850204545"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c1 .3 2 .5 3 .6a2 2 0 0 1 1.6 2z"/></svg> Bel +31850204545</a>
+  </div>
+  <div class="side">
+    
+    <div class="sidecard rv">
+      <h3>Waarom Snelvakman?</h3>
+      <ul class="checklist">
+        <li><span class="ci"><svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 0a10 10 0 1 0 0 20A10 10 0 0 0 10 0zM8.8 14.5 4.5 10.2l1.4-1.4 2.9 2.9 5.3-5.3 1.4 1.4-6.7 6.7z"/></svg></span>7 dagen per week bereikbaar van 08:00 tot 20:00</li>
+        <li><span class="ci"><svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 0a10 10 0 1 0 0 20A10 10 0 0 0 10 0zM8.8 14.5 4.5 10.2l1.4-1.4 2.9 2.9 5.3-5.3 1.4 1.4-6.7 6.7z"/></svg></span>Gratis prijsindicatie via WhatsApp</li>
+        <li><span class="ci"><svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 0a10 10 0 1 0 0 20A10 10 0 0 0 10 0zM8.8 14.5 4.5 10.2l1.4-1.4 2.9 2.9 5.3-5.3 1.4 1.4-6.7 6.7z"/></svg></span>Groot netwerk van erkende vakmannen en klusbedrijven</li>
+        <li><span class="ci"><svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 0a10 10 0 1 0 0 20A10 10 0 0 0 10 0zM8.8 14.5 4.5 10.2l1.4-1.4 2.9 2.9 5.3-5.3 1.4 1.4-6.7 6.7z"/></svg></span>Het werk begint pas als u akkoord bent met ons aanbod</li>
+      </ul>
+    </div>
+  </div>
+</div></div></section>
+
+<div class="ctaband"><div class="wrap">
+  <div><h2>Vandaag nog geholpen?</h2><p>Bel direct — u weet meteen waar u aan toe bent.</p></div>
+  <a class="btn btn-white" href="tel:+31850204545"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c1 .3 2 .5 3 .6a2 2 0 0 1 1.6 2z"/></svg> Bel +31850204545</a>
+</div></div>
+<footer><div class="wrap">
+  <span>© 2026 Snelvakman · Eindhoven en omgeving</span>
+  <span><a href="mailto:info@snelvakman.nl">info@snelvakman.nl</a></span>
+</div></footer>
+<div class="stickycall"><a href="tel:+31850204545"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c1 .3 2 .5 3 .6a2 2 0 0 1 1.6 2z"/></svg> Bel +31850204545 — vaak dezelfde dag geholpen</a></div>
+<script>
+  const mq = matchMedia('(prefers-reduced-motion: reduce)');
+  if (mq.matches || !('IntersectionObserver' in window)) {
+    document.querySelectorAll('.rv').forEach(el => el.classList.add('in'));
+  } else {
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    }), { rootMargin: '0px 0px -8% 0px' });
+    document.querySelectorAll('.rv').forEach(el => io.observe(el));
+  }
+</script>
+</body>
+</html>

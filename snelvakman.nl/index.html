@@ -5,17 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>Snelvakman — Eindhoven</title>
-<meta name="description" content="Direct een vakman in Eindhoven en omgeving Snelvakman, Eindhoven en omgeving.">
+<meta name="description" content="Direct een vakman voor uw klus in Eindhoven Snelvakman, Eindhoven en omgeving.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    --accent: #1B7EC2;
-    --accent-dark: color-mix(in srgb, #1B7EC2 76%, black);
-    --accent-soft: color-mix(in srgb, #1B7EC2 9%, white);
-    --cta: #E8611C;
-    --cta-dark: color-mix(in srgb, #E8611C 82%, black);
+    --accent: #1581C6;
+    --accent-dark: color-mix(in srgb, #1581C6 76%, black);
+    --accent-soft: color-mix(in srgb, #1581C6 9%, white);
+    --cta: #E8611A;
+    --cta-dark: color-mix(in srgb, #E8611A 82%, black);
     --ink: #0f1720; --body: #3d4854; --muted: #66717d;
     --bg: #fafaf9; --card: #ffffff; --line: #e7eaed;
   }
@@ -25,10 +25,9 @@
     line-height: 1.65; font-size: 16px; -webkit-font-smoothing: antialiased; }
   h1, h2, h3 { font-family: 'Sora', 'Inter', sans-serif; color: var(--ink); letter-spacing: -0.022em; }
   img { max-width: 100%; display: block; }
-  a, button { cursor: pointer; }
-  a:focus-visible, button:focus-visible { outline: 3px solid var(--cta); outline-offset: 3px; border-radius: 6px; }
+  a, button, summary { cursor: pointer; }
+  a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px solid var(--cta); outline-offset: 3px; border-radius: 6px; }
   .wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
-
   .btn { display: inline-flex; align-items: center; gap: 10px; padding: 15px 28px; border-radius: 12px;
     font-weight: 700; font-size: 15.5px; text-decoration: none; transition: transform .18s ease, box-shadow .18s ease, background .18s ease; }
   .btn:hover { transform: translateY(-2px); }
@@ -36,13 +35,17 @@
   .btn-cta:hover { background: var(--cta-dark); }
   .btn-outline-light { border: 1.5px solid rgba(255,255,255,0.6); color: #fff; }
   .btn-outline-light:hover { background: rgba(255,255,255,0.12); }
+  .btn-white { background: #fff; color: var(--accent-dark); }
+  .btn-white:hover { background: #f1f3f5; }
   .kicker { display: inline-block; color: var(--accent); font-weight: 700; text-transform: uppercase;
     font-size: 12.5px; letter-spacing: 0.1em; margin-bottom: 12px; }
+  section { padding: 92px 0; }
+  h2 { font-size: clamp(27px, 3.7vw, 38px); margin-bottom: 14px; }
+  .lead-p { color: var(--muted); max-width: 620px; margin-bottom: 46px; font-size: 17px; }
 
   .topbar { background: var(--accent-dark); color: rgba(255,255,255,0.92); font-size: 13.5px; }
   .topbar .wrap { display: flex; justify-content: space-between; gap: 12px; padding: 8px 24px; flex-wrap: wrap; }
   .topbar a { color: #fff; text-decoration: none; font-weight: 600; display: inline-flex; gap: 7px; align-items: center; }
-
   header { background: rgba(255,255,255,0.96); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line);
     position: sticky; top: 0; z-index: 40; }
   header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 12px 24px; }
@@ -50,13 +53,36 @@
   .brand img { max-height: 48px; max-width: 220px; object-fit: contain; }
   .wordmark { font-family: 'Sora'; font-weight: 800; font-size: 21px; color: var(--ink); }
   .wordmark em { color: var(--accent); font-style: normal; }
-  nav { display: flex; gap: 28px; font-weight: 600; font-size: 15px; }
-  nav a { color: var(--body); text-decoration: none; padding: 6px 2px; border-bottom: 2px solid transparent;
+  nav.main { display: flex; gap: 26px; font-weight: 600; font-size: 15px; }
+  nav.main a { color: var(--body); text-decoration: none; padding: 6px 2px; border-bottom: 2px solid transparent;
     transition: color .18s, border-color .18s; }
-  nav a:hover { color: var(--accent); border-color: var(--accent); }
-  @media (max-width: 880px) { nav { display: none; } }
+  nav.main a:hover, nav.main a.on { color: var(--accent); border-color: var(--accent); }
+  @media (max-width: 920px) { nav.main { display: none; } }
 
-  .hero { background: linear-gradient(96deg, rgba(8,13,20,0.86) 5%, rgba(8,13,20,0.62) 46%, rgba(8,13,20,0.22) 100%), url('assets/img05.jpg') center/cover no-repeat; color: #fff; }
+  .ctaband { background: linear-gradient(115deg, var(--accent), var(--accent-dark)); color: #fff; }
+  .ctaband .wrap { display: flex; align-items: center; justify-content: space-between; gap: 22px;
+    padding: 56px 24px; flex-wrap: wrap; }
+  .ctaband h2 { color: #fff; margin: 0; font-size: clamp(24px, 3vw, 32px); }
+  .ctaband p { color: rgba(255,255,255,0.85); margin-top: 6px; }
+
+  footer { background: var(--ink); color: #97a2ac; font-size: 14px; }
+  footer .wrap { display: flex; justify-content: space-between; gap: 12px; padding: 28px 24px; flex-wrap: wrap; }
+  footer a { color: #c6cdd3; text-decoration: none; }
+
+  .stickycall { position: fixed; left: 0; right: 0; bottom: 0; z-index: 60; display: none;
+    background: var(--cta); padding: 12px 16px calc(12px + env(safe-area-inset-bottom)); text-align: center; }
+  .stickycall a { color: #fff; font-weight: 800; font-size: 16.5px; text-decoration: none;
+    display: inline-flex; gap: 10px; align-items: center; }
+  @media (max-width: 880px) { .stickycall { display: block; } body { padding-bottom: 58px; } }
+
+  .rv { opacity: 0; transform: translateY(14px); transition: opacity .45s ease, transform .45s ease; }
+  .rv.in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .rv { opacity: 1; transform: none; transition: none; }
+    .btn { transition: none; }
+  }
+  .hero { background: linear-gradient(96deg, rgba(8,13,20,0.86) 5%, rgba(8,13,20,0.62) 46%, rgba(8,13,20,0.22) 100%), url('assets/img06.jpg') center/cover no-repeat; color: #fff; }
   .hero .wrap { padding: 112px 24px 150px; }
   .hero-inner { max-width: 660px; }
   .badge { display: inline-flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.13);
@@ -64,7 +90,7 @@
     border-radius: 999px; font-size: 14px; font-weight: 600; margin-bottom: 28px; }
   .badge .stars { color: #ffc531; letter-spacing: 2.5px; font-size: 14px; }
   .hero h1 { color: #fff; font-size: clamp(34px, 5.4vw, 56px); line-height: 1.06; margin-bottom: 20px; }
-  .hero p { font-size: 19px; color: rgba(255,255,255,0.9); max-width: 530px; margin-bottom: 36px; }
+  .hero p { font-size: 19px; color: rgba(255,255,255,0.9); max-width: 540px; margin-bottom: 36px; }
   .hero .cta-row { display: flex; gap: 14px; flex-wrap: wrap; }
 
   .proof { margin-top: -64px; position: relative; z-index: 5; }
@@ -75,26 +101,32 @@
   .proofcard .ci { color: var(--accent); flex: none; margin-top: 1px; }
   @media (max-width: 880px) { .proof .wrap { grid-template-columns: 1fr; } .proof { margin-top: -48px; } }
 
-  section { padding: 96px 0; }
-  h2 { font-size: clamp(27px, 3.7vw, 38px); margin-bottom: 14px; }
-  .lead-p { color: var(--muted); max-width: 600px; margin-bottom: 48px; font-size: 17px; }
+  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; counter-reset: step; }
+  .step { position: relative; background: var(--card); border: 1px solid var(--line); border-radius: 18px;
+    padding: 30px 26px 26px; }
+  .step::before { counter-increment: step; content: counter(step, decimal-leading-zero);
+    font-family: 'Sora'; font-weight: 800; font-size: 44px; line-height: 1;
+    color: color-mix(in srgb, var(--accent) 22%, white); display: block; margin-bottom: 14px; }
+  .step h3 { font-size: 17.5px; margin-bottom: 7px; }
+  .step p { font-size: 14.5px; color: var(--muted); }
+  @media (max-width: 880px) { .steps { grid-template-columns: 1fr; } }
 
   .services { display: grid; grid-template-columns: repeat(auto-fill, minmax(255px, 1fr)); gap: 20px; }
   .service { background: var(--card); border: 1px solid var(--line); border-radius: 18px; overflow: hidden;
-    transition: transform .2s ease, box-shadow .2s ease; }
+    transition: transform .2s ease, box-shadow .2s ease; text-decoration: none; display: block; }
   .service:hover { transform: translateY(-4px); box-shadow: 0 18px 36px rgba(15,23,32,0.1); }
   .service .ph { height: 165px; overflow: hidden; }
   .service .ph img { width: 100%; height: 100%; object-fit: cover; transition: transform .35s ease; }
   .service:hover .ph img { transform: scale(1.04); }
-  /* icoon-variant met exact dezelfde hoogte → uniform grid (QA-les) */
   .service .ph--icon { display: grid; place-items: center;
     background: linear-gradient(135deg, var(--accent-soft), color-mix(in srgb, var(--accent) 18%, white)); }
   .service .ph--icon .ic { width: 64px; height: 64px; border-radius: 16px; background: #fff;
     color: var(--accent); display: grid; place-items: center;
     box-shadow: 0 6px 16px color-mix(in srgb, var(--accent) 18%, transparent); }
-  .service .tx { padding: 20px 24px 26px; }
+  .service .tx { padding: 20px 24px 24px; }
   .service h3 { font-size: 17.5px; margin-bottom: 8px; }
   .service p { font-size: 14.5px; color: var(--muted); }
+  .service .more { display: inline-block; margin-top: 12px; color: var(--accent); font-weight: 700; font-size: 14px; }
 
   .about { background: #fff; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
   .about .wrap { display: grid; grid-template-columns: 1.05fr 1fr; gap: 72px; align-items: center; }
@@ -103,7 +135,6 @@
   .about-stat { border-radius: 22px; background: linear-gradient(135deg, var(--accent), var(--accent-dark));
     color: #fff; height: 440px; display: grid; place-items: center; text-align: center; padding: 24px; }
   .about-stat b { font-family: 'Sora'; font-size: 68px; display: block; line-height: 1.1; }
-  .about-stat span { font-size: 15.5px; opacity: 0.9; }
   .checklist { list-style: none; margin-top: 30px; }
   .checklist li { display: flex; gap: 13px; align-items: flex-start; margin-bottom: 15px;
     font-weight: 600; color: var(--ink); font-size: 15.5px; }
@@ -111,13 +142,32 @@
   @media (max-width: 880px) { .about .wrap { grid-template-columns: 1fr; gap: 38px; }
     .about-photo img, .about-stat { height: 300px; } }
 
-  .reviews { background: var(--accent-dark); color: #fff; text-align: center; }
-  .reviews .wrap { max-width: 680px; }
-  .reviews .big { font-family: 'Sora'; font-size: 76px; font-weight: 800; line-height: 1; }
-  .reviews .stars { color: #ffc531; font-size: 27px; letter-spacing: 6px; margin: 12px 0 8px; }
-  .reviews p { color: rgba(255,255,255,0.85); margin-bottom: 30px; }
-  .reviews .btn { background: #fff; color: var(--accent-dark); }
-  .reviews .btn:hover { background: #f1f3f5; }
+  .revhead { display: flex; align-items: flex-end; justify-content: space-between; gap: 20px;
+    flex-wrap: wrap; margin-bottom: 40px; }
+  .revscore { display: flex; align-items: center; gap: 18px; }
+  .revscore .big { font-family: 'Sora'; font-size: 62px; font-weight: 800; color: var(--ink); line-height: 1; }
+  .revscore .stars { color: #ffc531; font-size: 21px; letter-spacing: 3px; }
+  .revscore .sub { color: var(--muted); font-size: 14.5px; }
+  .revgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 18px; }
+  .review { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 26px; }
+  .review .stars { color: #ffc531; letter-spacing: 2px; margin-bottom: 12px; }
+  .review p { font-size: 14.5px; color: var(--body); margin-bottom: 16px; }
+  .review .who { display: flex; align-items: center; gap: 10px; font-weight: 700; color: var(--ink); font-size: 14px; }
+  .review .who .av { width: 34px; height: 34px; border-radius: 50%; background: var(--accent-soft);
+    color: var(--accent); display: grid; place-items: center; font-weight: 800; }
+
+  .duo { display: grid; grid-template-columns: 1fr 1.2fr; gap: 72px; align-items: start; }
+  .chips { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 18px; }
+  .chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 8px 16px; font-weight: 600; font-size: 14px; color: var(--ink); }
+  details { background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+    padding: 18px 22px; margin-bottom: 12px; }
+  details summary { font-weight: 700; color: var(--ink); font-size: 15.5px; list-style: none;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+  details summary::after { content: '+'; font-family: 'Sora'; font-size: 21px; color: var(--accent); }
+  details[open] summary::after { content: '–'; }
+  details p { margin-top: 10px; font-size: 14.5px; color: var(--muted); }
+  @media (max-width: 880px) { .duo { grid-template-columns: 1fr; gap: 40px; } }
 
   .contact .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
   .contact-card { background: var(--card); border: 1px solid var(--line); border-radius: 22px; padding: 38px;
@@ -130,23 +180,7 @@
   .contact-row b a:hover { color: var(--accent); }
   .contact-row .ic { width: 44px; height: 44px; border-radius: 12px; background: var(--accent-soft);
     color: var(--accent); display: grid; place-items: center; flex: none; }
-  @media (max-width: 880px) { .contact .wrap { grid-template-columns: 1fr; gap: 32px; } }
-
-  footer { background: var(--ink); color: #97a2ac; font-size: 14px; }
-  footer .wrap { display: flex; justify-content: space-between; gap: 12px; padding: 28px 24px; flex-wrap: wrap; }
-
-  .float-call { position: fixed; right: 18px; bottom: 18px; z-index: 60; display: none; }
-  @media (max-width: 880px) { .float-call { display: inline-flex; } }
-
-  /* subtiele scroll-reveal; uit bij reduced motion */
-  .rv { opacity: 0; transform: translateY(14px); transition: opacity .45s ease, transform .45s ease; }
-  .rv.in { opacity: 1; transform: none; }
-  @media (prefers-reduced-motion: reduce) {
-    html { scroll-behavior: auto; }
-    .rv { opacity: 1; transform: none; transition: none; }
-    .btn, .service, .service .ph img { transition: none; }
-  }
-</style>
+  @media (max-width: 880px) { .contact .wrap { grid-template-columns: 1fr; gap: 32px; } }</style>
 </head>
 <body>
 
@@ -154,23 +188,24 @@
   <span>Actief in Eindhoven en omgeving</span>
   <a href="tel:+31850204545"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c1 .3 2 .5 3 .6a2 2 0 0 1 1.6 2z"/></svg> +31850204545</a>
 </div></div>
-
 <header><div class="wrap">
-  <a class="brand" href="#" aria-label="Snelvakman">
+  <a class="brand" href="index.html" aria-label="Snelvakman">
     <img src="assets/img01.png" alt="Snelvakman">
   </a>
-  <nav aria-label="Hoofdmenu">
-    <a href="#diensten">Diensten</a>
-    <a href="#over">Over ons</a>
-    <a href="#contact">Contact</a>
+  <nav class="main" aria-label="Hoofdmenu">
+    <a href="index.html#diensten" class="">Diensten</a>
+    <a href="index.html#werkwijze">Werkwijze</a>
+    <a href="index.html#over">Over ons</a>
+    <a href="index.html#reviews">Reviews</a>
+    <a href="index.html#contact">Contact</a>
   </nav>
   <a class="btn btn-cta" href="tel:+31850204545"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c1 .3 2 .5 3 .6a2 2 0 0 1 1.6 2z"/></svg> Bel direct</a>
 </div></header>
 
 <div class="hero"><div class="wrap"><div class="hero-inner">
   <div class="badge"><span class="stars">★★★★★</span> 4.8 · 494 Google-reviews</div>
-  <h1>Direct een vakman in Eindhoven en omgeving</h1>
-  <p>Stuur een foto of filmpje van uw klus via WhatsApp en ontvang direct een kostenschatting. Bij akkoord komen wij vaak dezelfde dag nog langs.</p>
+  <h1>Direct een vakman voor uw klus in Eindhoven</h1>
+  <p>Lekkage, verstopping, dak, elektra of schilderwerk? Stuur een foto of filmpje via WhatsApp, ontvang snel een kostenschatting en vaak komen wij dezelfde dag nog langs.</p>
   <div class="cta-row">
     <a class="btn btn-cta" href="tel:+31850204545"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c1 .3 2 .5 3 .6a2 2 0 0 1 1.6 2z"/></svg> Bel +31850204545</a>
     <a class="btn btn-outline-light" href="#contact">Vraag een offerte aan</a>
@@ -180,67 +215,127 @@
 <div class="proof"><div class="wrap">
   <div class="proofcard rv"><span class="ci"><svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 0a10 10 0 1 0 0 20A10 10 0 0 0 10 0zM8.8 14.5 4.5 10.2l1.4-1.4 2.9 2.9 5.3-5.3 1.4 1.4-6.7 6.7z"/></svg></span><span>Vaak dezelfde dag geholpen</span></div>
   <div class="proofcard rv"><span class="ci"><svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 0a10 10 0 1 0 0 20A10 10 0 0 0 10 0zM8.8 14.5 4.5 10.2l1.4-1.4 2.9 2.9 5.3-5.3 1.4 1.4-6.7 6.7z"/></svg></span><span>24/7 bereikbaar via WhatsApp</span></div>
-  <div class="proofcard rv"><span class="ci"><svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 0a10 10 0 1 0 0 20A10 10 0 0 0 10 0zM8.8 14.5 4.5 10.2l1.4-1.4 2.9 2.9 5.3-5.3 1.4 1.4-6.7 6.7z"/></svg></span><span>4.8 ★ op Google — 494 reviews</span></div>
+  <div class="proofcard rv"><span class="ci"><svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 0a10 10 0 1 0 0 20A10 10 0 0 0 10 0zM8.8 14.5 4.5 10.2l1.4-1.4 2.9 2.9 5.3-5.3 1.4 1.4-6.7 6.7z"/></svg></span><span>Groot team ervaren vakmannen</span></div>
 </div></div>
 
-<section id="diensten"><div class="wrap">
+<section id="werkwijze"><div class="wrap">
+  <span class="kicker">Zo werkt het</span>
+  <h2 class="rv">Zo werkt het</h2>
+  <div class="steps" style="margin-top:42px">
+    <div class="step rv"><h3>Stuur uw klus via WhatsApp</h3><p>Stuur een duidelijke foto of filmpje van het probleem of uw klus via WhatsApp.</p></div>
+    <div class="step rv"><h3>Ontvang een kostenschatting</h3><p>Wij bekijken uw situatie en u ontvangt snel een schatting van de kosten.</p></div>
+    <div class="step rv"><h3>Vaak dezelfde dag opgelost</h3><p>Bent u akkoord? Dan plannen we de klus in en komen we vaak dezelfde dag nog langs om het op te lossen.</p></div>
+  </div>
+</div></section>
+
+<section id="diensten" style="padding-top:0"><div class="wrap">
   <span class="kicker">Onze diensten</span>
   <h2 class="rv">Waar wij u mee helpen</h2>
-  <p class="lead-p rv">Van kleine reparaties tot complete installaties — één aanspreekpunt en duidelijke afspraken.</p>
+  <p class="lead-p rv">Van kleine reparaties tot complete klussen — één aanspreekpunt en duidelijke afspraken.</p>
   <div class="services">
-    <div class="service rv">
+    <a class="service rv" href="diensten/loodgieter/index.html">
       <div class="ph ph--icon"><span class="ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2s6 6.6 6 11a6 6 0 0 1-12 0c0-4.4 6-11 6-11z"/></svg></span></div>
-      <div class="tx"><h3>Loodgieter</h3><p>Van lekkage in badkamer, keuken of toilet tot het verleggen van leidingen — snel en vakkundig opgelost.</p></div>
-    </div>
-    <div class="service rv">
+      <div class="tx"><h3>Loodgieter</h3><p>Lekkages, verstoppingen, leidingwerk en sanitair — met spoedservice in Eindhoven en omgeving.</p><span class="more">Lees meer →</span></div></a>
+    <a class="service rv" href="diensten/elektricien/index.html">
       <div class="ph ph--icon"><span class="ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg></span></div>
-      <div class="tx"><h3>Elektricien</h3><p>Voor het verleggen van stopcontacten en al uw elektrawerk in huis.</p></div>
-    </div>
-    <div class="service rv">
-      <div class="ph ph--icon"><span class="ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4.6 4.6 0 0 0-6.1 6.1L3 18v3h3l5.6-5.6a4.6 4.6 0 0 0 6.1-6.1l-3 3-2.4-2.4 3-3z"/></svg></span></div>
-      <div class="tx"><h3>Timmerman</h3><p>Vakkundig timmerwerk voor kleine klussen én groter verbouwwerk.</p></div>
-    </div>
-    <div class="service rv">
-      <div class="ph ph--icon"><span class="ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h18v2a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5v-2z"/><path d="M5 12V5a2 2 0 0 1 4 0"/><path d="M6 19.5 5 22M18 19.5 19 22"/></svg></span></div>
-      <div class="tx"><h3>Tegelzetter</h3><p>Strak tegelwerk in badkamer, keuken of toilet, ook bij complete renovaties.</p></div>
-    </div>
-    <div class="service rv">
+      <div class="tx"><h3>Elektricien</h3><p>Van groepenkast tot laadpaal: aanleg, reparatie en het verhelpen van storingen, 24/7 bereikbaar bij spoed.</p><span class="more">Lees meer →</span></div></a>
+    <a class="service rv" href="diensten/dakdekker/index.html">
       <div class="ph ph--icon"><span class="ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5 9.5V21h14V9.5"/></svg></span></div>
-      <div class="tx"><h3>Dakdekker</h3><p>Voor dakwerk en het isoleren van uw dak.</p></div>
-    </div>
-    <div class="service rv">
+      <div class="tx"><h3>Dakdekker</h3><p>Daklekkage, dakreparatie, dakrenovatie en isolatie — lekkages vaak binnen 1 dag opgelost.</p><span class="more">Lees meer →</span></div></a>
+    <a class="service rv" href="diensten/schilder/index.html">
+      <div class="ph ph--icon"><span class="ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4.6 4.6 0 0 0-6.1 6.1L3 18v3h3l5.6-5.6a4.6 4.6 0 0 0 6.1-6.1l-3 3-2.4-2.4 3-3z"/></svg></span></div>
+      <div class="tx"><h3>Schilder</h3><p>Binnen- en buitenschilderwerk: muren, plafonds, kozijnen, deuren, trappen en meer.</p><span class="more">Lees meer →</span></div></a>
+    <a class="service rv" href="diensten/tegelzetter/index.html">
+      <div class="ph ph--icon"><span class="ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h18v2a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5v-2z"/><path d="M5 12V5a2 2 0 0 1 4 0"/><path d="M6 19.5 5 22M18 19.5 19 22"/></svg></span></div>
+      <div class="tx"><h3>Tegelzetter</h3><p>Tegelwerk voor badkamer, keuken en vloer, ook voor het vervangen van kapotte tegels.</p><span class="more">Lees meer →</span></div></a>
+    <a class="service rv" href="diensten/hovenier/index.html">
       <div class="ph ph--icon"><span class="ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20c8 0 14-6 14-14v-2h-2C8 4 4 10 4 18"/><path d="M4 20c0-6 4-10 10-12"/></svg></span></div>
-      <div class="tx"><h3>Hovenier</h3><p>Voor het onderhoud en de aanpak van uw tuin.</p></div>
-    </div>
+      <div class="tx"><h3>Hovenier &amp; bestrating</h3><p>Tuinonderhoud, snoeiwerk en bestrating van tuin, oprit en straatwerk in Eindhoven en regio.</p><span class="more">Lees meer →</span></div></a>
   </div>
 </div></section>
 
 <div class="about" id="over"><section><div class="wrap">
-  <div class="about-photo rv"><img src="assets/img09.jpg" alt="Snelvakman"></div>
+  <div class="about-photo rv"><img src="assets/img02.webp" alt="Snelvakman"></div>
   <div>
     <span class="kicker">Over Snelvakman</span>
-    <h2 class="rv">Klus snel geregeld</h2>
-    <p class="rv">Een goede vakman vinden is tegenwoordig lastig, en lange wachttijden zijn eerder regel dan uitzondering. Niet bij Snelvakman: ons team van vakmannen staat klaar voor spoedklussen én groter werk, van een lekkage tot een complete badkamer- of toiletrenovatie. Via WhatsApp bent u rechtstreeks met ons in contact en ontvangt u vooraf een schatting van de kosten. Wij werken in Eindhoven en de hele regio, van Veldhoven en Geldrop tot Helmond en Valkenswaard.</p>
+    <h2 class="rv">Al uw klussen, één aanspreekpunt</h2>
+    <p class="rv">Een goede vakman vinden is tegenwoordig lastig: rondbellen, offertes vergelijken en lange wachttijden zijn eerder regel dan uitzondering. Bij Snelvakman is dat verleden tijd — dankzij ons grote team en netwerk van erkende vakmannen en bouwbedrijven staat er altijd snel iemand voor u klaar, op een moment dat ú uitkomt. We zijn 7 dagen per week van 08:00 tot 20:00 bereikbaar, met Mo als uw vaste contactpersoon. Naast loodgieters, elektriciens, dakdekkers, schilders, tegelzetters en hoveniers regelen wij ook stukadoors, timmermannen en metselaars — van kleine klus tot complete badkamer- of toiletrenovatie. En pas als u tevreden bent met ons aanbod, begint het echte werk.</p>
     <ul class="checklist">
-      <li class="rv"><span class="ci"><svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 0a10 10 0 1 0 0 20A10 10 0 0 0 10 0zM8.8 14.5 4.5 10.2l1.4-1.4 2.9 2.9 5.3-5.3 1.4 1.4-6.7 6.7z"/></svg></span>Stuur een foto of filmpje van het probleem via WhatsApp</li>
-      <li class="rv"><span class="ci"><svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 0a10 10 0 1 0 0 20A10 10 0 0 0 10 0zM8.8 14.5 4.5 10.2l1.4-1.4 2.9 2.9 5.3-5.3 1.4 1.4-6.7 6.7z"/></svg></span>U ontvangt vooraf een schatting van de kosten</li>
-      <li class="rv"><span class="ci"><svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 0a10 10 0 1 0 0 20A10 10 0 0 0 10 0zM8.8 14.5 4.5 10.2l1.4-1.4 2.9 2.9 5.3-5.3 1.4 1.4-6.7 6.7z"/></svg></span>Bij akkoord komen wij vaak dezelfde dag langs</li>
-      <li class="rv"><span class="ci"><svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 0a10 10 0 1 0 0 20A10 10 0 0 0 10 0zM8.8 14.5 4.5 10.2l1.4-1.4 2.9 2.9 5.3-5.3 1.4 1.4-6.7 6.7z"/></svg></span>Actief in Eindhoven en de hele regio</li>
+      <li class="rv"><span class="ci"><svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 0a10 10 0 1 0 0 20A10 10 0 0 0 10 0zM8.8 14.5 4.5 10.2l1.4-1.4 2.9 2.9 5.3-5.3 1.4 1.4-6.7 6.7z"/></svg></span>7 dagen per week bereikbaar van 08:00 tot 20:00</li>
+      <li class="rv"><span class="ci"><svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 0a10 10 0 1 0 0 20A10 10 0 0 0 10 0zM8.8 14.5 4.5 10.2l1.4-1.4 2.9 2.9 5.3-5.3 1.4 1.4-6.7 6.7z"/></svg></span>Gratis prijsindicatie via WhatsApp</li>
+      <li class="rv"><span class="ci"><svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 0a10 10 0 1 0 0 20A10 10 0 0 0 10 0zM8.8 14.5 4.5 10.2l1.4-1.4 2.9 2.9 5.3-5.3 1.4 1.4-6.7 6.7z"/></svg></span>Groot netwerk van erkende vakmannen en klusbedrijven</li>
+      <li class="rv"><span class="ci"><svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 0a10 10 0 1 0 0 20A10 10 0 0 0 10 0zM8.8 14.5 4.5 10.2l1.4-1.4 2.9 2.9 5.3-5.3 1.4 1.4-6.7 6.7z"/></svg></span>Het werk begint pas als u akkoord bent met ons aanbod</li>
     </ul>
   </div>
 </div></section></div>
 
-<section class="reviews"><div class="wrap">
-  <div class="big rv">4.8</div>
-  <div class="stars" aria-label="4.8 van 5 sterren">★★★★★</div>
-  <p>Gemiddelde beoordeling op basis van 494 Google-reviews</p>
-  <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Snelvakman%20Eindhoven" target="_blank" rel="noopener">Bekijk onze reviews op Google</a>
+<section id="reviews"><div class="wrap">
+  <div class="revhead">
+    <div>
+      <span class="kicker">Wat klanten zeggen</span>
+      <div class="revscore">
+        <span class="big">4.8</span>
+        <span><span class="stars">★★★★★</span><br><span class="sub">494 reviews op Google</span></span>
+      </div>
+    </div>
+    <a class="btn btn-cta" style="background:var(--card);color:var(--ink);border:1.5px solid var(--line);box-shadow:none" href="https://www.google.com/maps/search/?api=1&query=Snelvakman%20Eindhoven" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M23.5 12.3c0-.9-.1-1.5-.3-2.2H12v4.1h6.5c-.1 1.1-.8 2.7-2.4 3.8l3.6 2.8c2.2-2 3.8-5 3.8-8.5z"/><path fill="#34A853" d="M12 24c3.2 0 6-1.1 7.9-2.9l-3.6-2.8c-1 .7-2.4 1.2-4.3 1.2-3.3 0-6-2.2-7-5.1l-3.7 2.9C3.3 21.2 7.3 24 12 24z"/><path fill="#FBBC05" d="M5 14.4c-.3-.8-.4-1.6-.4-2.4s.2-1.6.4-2.4L1.3 6.7C.5 8.3 0 10.1 0 12s.5 3.7 1.3 5.3L5 14.4z"/><path fill="#EA4335" d="M12 4.6c1.8 0 3 .8 3.7 1.4l3.2-3.1C17 1.1 15.2 0 12 0 7.3 0 3.3 2.8 1.3 6.7L5 9.6c1-2.9 3.7-5 7-5z"/></svg> Bekijk alle reviews</a>
+  </div>
+  <div class="revgrid">
+    <div class="review rv">
+      <div class="stars">★★★★★</div>
+      <p>“Onze toilet is in een week gerenoveerd naar volle tevredenheid. Goede en vriendelijke vakmensen en communicatie via wattsapp efficient en altijd prompte reactie. Zeer aan te bevelen”</p>
+      <div class="who"><span class="av">P</span> paul <span style="margin-left:auto"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M23.5 12.3c0-.9-.1-1.5-.3-2.2H12v4.1h6.5c-.1 1.1-.8 2.7-2.4 3.8l3.6 2.8c2.2-2 3.8-5 3.8-8.5z"/><path fill="#34A853" d="M12 24c3.2 0 6-1.1 7.9-2.9l-3.6-2.8c-1 .7-2.4 1.2-4.3 1.2-3.3 0-6-2.2-7-5.1l-3.7 2.9C3.3 21.2 7.3 24 12 24z"/><path fill="#FBBC05" d="M5 14.4c-.3-.8-.4-1.6-.4-2.4s.2-1.6.4-2.4L1.3 6.7C.5 8.3 0 10.1 0 12s.5 3.7 1.3 5.3L5 14.4z"/><path fill="#EA4335" d="M12 4.6c1.8 0 3 .8 3.7 1.4l3.2-3.1C17 1.1 15.2 0 12 0 7.3 0 3.3 2.8 1.3 6.7L5 9.6c1-2.9 3.7-5 7-5z"/></svg></span></div>
+    </div>
+    <div class="review rv">
+      <div class="stars">★★★★★</div>
+      <p>“Wij worden heel snel geholpen 🙏”</p>
+      <div class="who"><span class="av">N</span> Nas <span style="margin-left:auto"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M23.5 12.3c0-.9-.1-1.5-.3-2.2H12v4.1h6.5c-.1 1.1-.8 2.7-2.4 3.8l3.6 2.8c2.2-2 3.8-5 3.8-8.5z"/><path fill="#34A853" d="M12 24c3.2 0 6-1.1 7.9-2.9l-3.6-2.8c-1 .7-2.4 1.2-4.3 1.2-3.3 0-6-2.2-7-5.1l-3.7 2.9C3.3 21.2 7.3 24 12 24z"/><path fill="#FBBC05" d="M5 14.4c-.3-.8-.4-1.6-.4-2.4s.2-1.6.4-2.4L1.3 6.7C.5 8.3 0 10.1 0 12s.5 3.7 1.3 5.3L5 14.4z"/><path fill="#EA4335" d="M12 4.6c1.8 0 3 .8 3.7 1.4l3.2-3.1C17 1.1 15.2 0 12 0 7.3 0 3.3 2.8 1.3 6.7L5 9.6c1-2.9 3.7-5 7-5z"/></svg></span></div>
+    </div>
+    <div class="review rv">
+      <div class="stars">★★★★★</div>
+      <p>“Na een hele dag zonder water en toilet wilde Karim, ondanks het late tijdstip (19.00 uur) en de onmogelijke klus niet weg voordat de klus geklaard was. Top monteur en 5 sterren is niet genoeg. Hartstikke bedankt en dikke duim omhoog.”</p>
+      <div class="who"><span class="av">P</span> Paul Witlox <span style="margin-left:auto"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M23.5 12.3c0-.9-.1-1.5-.3-2.2H12v4.1h6.5c-.1 1.1-.8 2.7-2.4 3.8l3.6 2.8c2.2-2 3.8-5 3.8-8.5z"/><path fill="#34A853" d="M12 24c3.2 0 6-1.1 7.9-2.9l-3.6-2.8c-1 .7-2.4 1.2-4.3 1.2-3.3 0-6-2.2-7-5.1l-3.7 2.9C3.3 21.2 7.3 24 12 24z"/><path fill="#FBBC05" d="M5 14.4c-.3-.8-.4-1.6-.4-2.4s.2-1.6.4-2.4L1.3 6.7C.5 8.3 0 10.1 0 12s.5 3.7 1.3 5.3L5 14.4z"/><path fill="#EA4335" d="M12 4.6c1.8 0 3 .8 3.7 1.4l3.2-3.1C17 1.1 15.2 0 12 0 7.3 0 3.3 2.8 1.3 6.7L5 9.6c1-2.9 3.7-5 7-5z"/></svg></span></div>
+    </div>
+    <div class="review rv">
+      <div class="stars">★★★★★</div>
+      <p>“Ben blij met mijn nieuwe badkamer. Bedankt de top service en begeleiding bij het vernieuwen van mijn badkamer.”</p>
+      <div class="who"><span class="av">H</span> Halima <span style="margin-left:auto"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M23.5 12.3c0-.9-.1-1.5-.3-2.2H12v4.1h6.5c-.1 1.1-.8 2.7-2.4 3.8l3.6 2.8c2.2-2 3.8-5 3.8-8.5z"/><path fill="#34A853" d="M12 24c3.2 0 6-1.1 7.9-2.9l-3.6-2.8c-1 .7-2.4 1.2-4.3 1.2-3.3 0-6-2.2-7-5.1l-3.7 2.9C3.3 21.2 7.3 24 12 24z"/><path fill="#FBBC05" d="M5 14.4c-.3-.8-.4-1.6-.4-2.4s.2-1.6.4-2.4L1.3 6.7C.5 8.3 0 10.1 0 12s.5 3.7 1.3 5.3L5 14.4z"/><path fill="#EA4335" d="M12 4.6c1.8 0 3 .8 3.7 1.4l3.2-3.1C17 1.1 15.2 0 12 0 7.3 0 3.3 2.8 1.3 6.7L5 9.6c1-2.9 3.7-5 7-5z"/></svg></span></div>
+    </div>
+    <div class="review rv">
+      <div class="stars">★★★★★</div>
+      <p>“snel en vakkundig werk!”</p>
+      <div class="who"><span class="av">J</span> Joey <span style="margin-left:auto"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M23.5 12.3c0-.9-.1-1.5-.3-2.2H12v4.1h6.5c-.1 1.1-.8 2.7-2.4 3.8l3.6 2.8c2.2-2 3.8-5 3.8-8.5z"/><path fill="#34A853" d="M12 24c3.2 0 6-1.1 7.9-2.9l-3.6-2.8c-1 .7-2.4 1.2-4.3 1.2-3.3 0-6-2.2-7-5.1l-3.7 2.9C3.3 21.2 7.3 24 12 24z"/><path fill="#FBBC05" d="M5 14.4c-.3-.8-.4-1.6-.4-2.4s.2-1.6.4-2.4L1.3 6.7C.5 8.3 0 10.1 0 12s.5 3.7 1.3 5.3L5 14.4z"/><path fill="#EA4335" d="M12 4.6c1.8 0 3 .8 3.7 1.4l3.2-3.1C17 1.1 15.2 0 12 0 7.3 0 3.3 2.8 1.3 6.7L5 9.6c1-2.9 3.7-5 7-5z"/></svg></span></div>
+    </div>
+    <div class="review rv">
+      <div class="stars">★★★★★</div>
+      <p>“Dit schildersbedrijf kon onze woning direct instap klaar maken. Ze zijn hun woord nagekomen en wij konden volgens planning verhuizen. Super fijn!”</p>
+      <div class="who"><span class="av">M</span> Marion Koenders <span style="margin-left:auto"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M23.5 12.3c0-.9-.1-1.5-.3-2.2H12v4.1h6.5c-.1 1.1-.8 2.7-2.4 3.8l3.6 2.8c2.2-2 3.8-5 3.8-8.5z"/><path fill="#34A853" d="M12 24c3.2 0 6-1.1 7.9-2.9l-3.6-2.8c-1 .7-2.4 1.2-4.3 1.2-3.3 0-6-2.2-7-5.1l-3.7 2.9C3.3 21.2 7.3 24 12 24z"/><path fill="#FBBC05" d="M5 14.4c-.3-.8-.4-1.6-.4-2.4s.2-1.6.4-2.4L1.3 6.7C.5 8.3 0 10.1 0 12s.5 3.7 1.3 5.3L5 14.4z"/><path fill="#EA4335" d="M12 4.6c1.8 0 3 .8 3.7 1.4l3.2-3.1C17 1.1 15.2 0 12 0 7.3 0 3.3 2.8 1.3 6.7L5 9.6c1-2.9 3.7-5 7-5z"/></svg></span></div>
+    </div>
+  </div>
 </div></section>
 
-<section id="contact" class="contact"><div class="wrap">
+<section style="padding-top:0"><div class="wrap"><div class="duo">
+  <div>
+    <span class="kicker">Werkgebied</span>
+    <h2 class="rv">Actief in Eindhoven en omgeving</h2>
+    <div class="chips"><span class="chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> Eindhoven</span> <span class="chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> Helmond</span> <span class="chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> Veldhoven</span> <span class="chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> Valkenswaard</span> <span class="chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> Best</span> <span class="chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> Mierlo Hout</span> <span class="chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> Deurne</span> <span class="chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> Den Bosch</span> <span class="chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> Gerwen</span> <span class="chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> Gemert</span> <span class="chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> Geldrop</span> <span class="chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> Hilvarenbeek</span> <span class="chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> Maarheeze</span> <span class="chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> Nuenen</span> <span class="chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> Aalst</span> <span class="chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> Asten</span> <span class="chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> Bergeijk</span> <span class="chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> Veghel</span> <span class="chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> Vught</span> <span class="chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> Waalre</span> <span class="chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> Waalwijk</span> <span class="chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> Stiphout</span> <span class="chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> Oirschot</span> <span class="chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> Wintelre</span> <span class="chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> Oerle</span> <span class="chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> Heeze</span> <span class="chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> Leende</span> <span class="chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> Brandevoort</span> <span class="chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> Lieshout</span> <span class="chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> Aarle-Rixtel</span></div>
+  </div>
+  <div>
+    <span class="kicker">Veelgestelde vragen</span>
+    <div style="margin-top:16px">
+    <details class="rv"><summary>Hoe snel kunnen jullie langskomen?</summary><p>Bij spoed vaak dezelfde dag. Stuur een foto of filmpje van het probleem via WhatsApp; na uw akkoord op de kostenschatting komen wij vaak dezelfde dag nog langs. Daklekkages lossen we vaak binnen 1 dag op.</p></details>
+    <details class="rv"><summary>Wat zijn jullie openingstijden?</summary><p>Wij staan 7 dagen per week van 08:00 tot 20:00 voor u klaar om uw klus aan te nemen. Via onze WhatsApp-service zijn we bovendien 24/7 bereikbaar voor spoedgevallen.</p></details>
+    <details class="rv"><summary>Hoe krijg ik een prijsindicatie?</summary><p>Stuur uw klus gratis via WhatsApp, het liefst met een duidelijke foto of filmpje. U ontvangt snel een schatting van de kosten op maat — pas als u tevreden bent met ons aanbod, beginnen we met het echte werk.</p></details>
+    <details class="rv"><summary>In welk gebied zijn jullie werkzaam?</summary><p>Wij werken in Eindhoven en de wijde regio, van Veldhoven, Best en Helmond tot Den Bosch en Tilburg. Als hovenier en stratenmaker zijn we daarnaast actief in de regio's Tilburg, Breda, Den Bosch en Helmond. Woont u net buiten deze plaatsen? Geen probleem — wij zijn flexibel inzetbaar in de hele regio.</p></details>
+    <details class="rv"><summary>Kan ik ook voor andere klussen bij jullie terecht?</summary><p>Ja. Naast loodgieters-, elektra-, dak-, schilder-, tegel- en hovenierswerk regelen wij ook stukadoors (voor spachtelputs, raapwerk, pleisterwerk en spackspuitwerk), timmermannen en metselaars — van het verleggen van stopcontacten tot een complete badkamer- of toiletrenovatie.</p></details>
+    </div>
+  </div>
+</div></div></section>
+
+<section id="contact" class="contact" style="padding-top:0"><div class="wrap">
   <div>
     <span class="kicker">Contact</span>
-    <h2 class="rv">Vandaag nog geholpen?</h2>
+    <h2 class="rv">Neem contact op</h2>
     <p class="lead-p rv" style="margin-bottom:26px">Bel of mail — we denken direct met u mee en u weet meteen waar u aan toe bent.</p>
     <a class="btn btn-cta" href="tel:+31850204545"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c1 .3 2 .5 3 .6a2 2 0 0 1 1.6 2z"/></svg> Bel +31850204545</a>
   </div>
@@ -251,13 +346,15 @@
   </div>
 </div></section>
 
+<div class="ctaband"><div class="wrap">
+  <div><h2>Vandaag nog geholpen?</h2><p>Bel direct — u weet meteen waar u aan toe bent.</p></div>
+  <a class="btn btn-white" href="tel:+31850204545"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c1 .3 2 .5 3 .6a2 2 0 0 1 1.6 2z"/></svg> Bel +31850204545</a>
+</div></div>
 <footer><div class="wrap">
-  <span>© 2026 Snelvakman</span>
-  <span>Eindhoven en omgeving</span>
+  <span>© 2026 Snelvakman · Eindhoven en omgeving</span>
+  <span><a href="mailto:info@snelvakman.nl">info@snelvakman.nl</a></span>
 </div></footer>
-
-<a class="btn btn-cta float-call" href="tel:+31850204545"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c1 .3 2 .5 3 .6a2 2 0 0 1 1.6 2z"/></svg> Bel direct</a>
-
+<div class="stickycall"><a href="tel:+31850204545"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c1 .3 2 .5 3 .6a2 2 0 0 1 1.6 2z"/></svg> Bel +31850204545 — vaak dezelfde dag geholpen</a></div>
 <script>
   const mq = matchMedia('(prefers-reduced-motion: reduce)');
   if (mq.matches || !('IntersectionObserver' in window)) {
@@ -269,6 +366,5 @@
     document.querySelectorAll('.rv').forEach(el => io.observe(el));
   }
 </script>
-
 </body>
 </html>
