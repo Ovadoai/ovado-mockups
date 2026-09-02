@@ -29,10 +29,10 @@
   a, button, summary { cursor: pointer; }
   a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px solid var(--cta); outline-offset: 3px; border-radius: 8px; }
   .wrap { max-width: 1160px; margin: 0 auto; padding: 0 28px; }
-  section { padding: 130px 0; }
-  @media (max-width: 880px) { section { padding: 84px 0; } }
+  section { padding: 92px 0; }
+  @media (max-width: 880px) { section { padding: 60px 0; } }
   h2 { font-size: clamp(30px, 4vw, 46px); font-weight: 700; margin-bottom: 16px; line-height: 1.08; }
-  .lead-p { color: var(--muted); max-width: 580px; font-size: 17.5px; margin-bottom: 56px; }
+  .lead-p { color: var(--muted); max-width: 580px; font-size: 17.5px; margin-bottom: 40px; }
 
   .btn { display: inline-flex; align-items: center; gap: 10px; padding: 16px 30px; border-radius: 999px;
     font-weight: 600; font-size: 15.5px; text-decoration: none; letter-spacing: 0.01em;
@@ -57,7 +57,7 @@
     border-radius: 999px; padding: 8px 10px 8px 18px; max-width: 100%; }
   .nav .brand { display: flex; align-items: center; text-decoration: none; margin-right: 10px; }
   .nav .brand img { max-height: 34px; max-width: 150px; object-fit: contain; }
-  .nav .wordmark { font-family: 'Outfit'; font-weight: 800; font-size: 18px; color: var(--ink); white-space: nowrap; }
+  .nav .wordmark { font-family: 'Outfit'; font-weight: 800; font-size: 18px; color: var(--ink); white-space: nowrap; max-width: 200px; overflow: hidden; text-overflow: ellipsis; }
   .nav .wordmark em { color: var(--accent); font-style: normal; }
   .nav .links { display: flex; gap: 2px; }
   .nav .links a { color: var(--body); text-decoration: none; font-weight: 600; font-size: 14.5px;
@@ -69,7 +69,7 @@
   .ctaband { background: linear-gradient(120deg, var(--accent-dark), var(--accent) 55%, color-mix(in srgb, var(--accent) 60%, black)); position: relative; overflow: hidden; }
   .ctaband::before { content: ''; position: absolute; inset: -40%;
     background: radial-gradient(circle at 75% 20%, rgba(255,255,255,0.14), transparent 45%); }
-  .ctaband .wrap { position: relative; padding-top: 110px; padding-bottom: 110px; text-align: center; }
+  .ctaband .wrap { position: relative; padding-top: 84px; padding-bottom: 84px; text-align: center; }
   .ctaband h2 { color: #fff; font-size: clamp(32px, 4.6vw, 54px); max-width: 900px; margin: 0 auto 18px; }
   .ctaband p { color: rgba(255,255,255,0.8); margin-bottom: 40px; font-size: 17.5px; }
 
@@ -97,9 +97,9 @@
   }
   .hero { position: relative; color: #fff; overflow: hidden; }
   .hero-center { background: linear-gradient(rgba(9,14,20,0.62), rgba(9,14,20,0.62)), radial-gradient(ellipse at 50% 100%, rgba(9,14,20,0.35), transparent 60%), url('assets/img06.jpg') center/cover no-repeat; }
-  .hero-center .wrap { padding: 190px 28px 150px; text-align: center; max-width: 1100px; }
+  .hero-center .wrap { padding: 165px 28px 120px; text-align: center; max-width: 1100px; }
   .hero-split { background: linear-gradient(140deg, var(--ink), var(--ink-2) 60%, color-mix(in srgb, #0A7CC9 26%, var(--ink))); }
-  .hero-split .wrap { padding: 175px 28px 120px; display: grid; grid-template-columns: 1.15fr 0.85fr;
+  .hero-split .wrap { padding: 150px 28px 100px; display: grid; grid-template-columns: 1.15fr 0.85fr;
     gap: 70px; align-items: center; }
   .hero-split .visual { border-radius: 26px; overflow: hidden; box-shadow: 0 40px 90px rgba(0,0,0,0.45);
     transform: rotate(1.2deg); }
@@ -116,12 +116,12 @@
   @media (max-width: 920px) {
     .hero-split .wrap { grid-template-columns: 1fr; padding-top: 150px; }
     .hero-split .visual { transform: none; } .hero-split .visual img { height: 320px; }
-    .hero-center .wrap { padding: 150px 24px 110px; }
+    .hero-center .wrap { padding: 130px 24px 90px; }
   }
 
   .proof { background: var(--ink); color: #fff; padding: 0; }
   .proof .wrap { display: grid; grid-template-columns: repeat(3, 1fr); }
-  .proofitem { padding: 44px 34px; border-left: 1px solid var(--line-dark);
+  .proofitem { padding: 34px 32px; border-left: 1px solid var(--line-dark);
     display: flex; gap: 16px; align-items: flex-start; font-weight: 500; font-size: 15.5px;
     color: rgba(255,255,255,0.88); line-height: 1.55; }
   .proofitem:first-child { border-left: 0; }
@@ -129,7 +129,7 @@
   @media (max-width: 880px) { .proof .wrap { grid-template-columns: 1fr; }
     .proofitem { border-left: 0; border-top: 1px solid var(--line-dark); padding: 24px 28px; } }
 
-  .statement { text-align: center; padding: 85px 0; }
+  .statement { text-align: center; padding: 56px 0; }
   .statement p { font-family: 'Outfit'; font-size: clamp(26px, 3.6vw, 42px); font-weight: 700;
     color: var(--ink); line-height: 1.25; max-width: 980px; margin: 0 auto; letter-spacing: -0.02em; }
   .statement .inpill { display: inline-block; width: 96px; height: 44px; border-radius: 999px;
@@ -204,7 +204,7 @@
   .revdark { background: radial-gradient(ellipse at 15% 0%, color-mix(in srgb, #0A7CC9 20%, var(--ink)), transparent 50%), var(--ink); color: #fff; }
   .revdark h2 { color: #fff; }
   .revhead { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px;
-    flex-wrap: wrap; margin-bottom: 60px; }
+    flex-wrap: wrap; margin-bottom: 44px; }
   .revscore { display: flex; align-items: center; gap: 22px; }
   .revscore .big { font-family: 'Outfit'; font-size: 92px; font-weight: 800; color: #fff; line-height: 0.95; }
   .revscore .meta { font-size: 15px; color: rgba(255,255,255,0.7); }
@@ -225,17 +225,15 @@
     color: #fff; display: grid; place-items: center; font-weight: 700; font-family: 'Outfit'; }
   .review .who .g { margin-left: auto; opacity: 0.9; }
 
-  .areaband { padding: 110px 0; text-align: center; background: #fff;
+  .areaband { padding: 84px 0; text-align: center; background: #fff;
     border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
   .areaband h2 { margin-bottom: 12px; }
-  .areaband .lead-p { margin: 0 auto 50px; }
+  .areaband .lead-p { margin: 0 auto 38px; }
   .chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;
     max-width: 920px; margin: 0 auto; }
   .chip { display: inline-flex; align-items: center; gap: 8px; background: var(--bg);
     border: 1px solid var(--line); border-radius: 999px; padding: 10px 20px;
-    font-weight: 600; font-size: 14.5px; color: var(--ink); white-space: nowrap;
-    transition: transform .4s cubic-bezier(.19,1,.22,1), border-color .3s; }
-  .chip:hover { transform: translateY(-2px); border-color: var(--accent); }
+    font-weight: 600; font-size: 14.5px; color: var(--ink); white-space: nowrap; }
   .chip svg { color: var(--accent); }
   .chip.hl { background: var(--accent); border-color: var(--accent); color: #fff; }
   .chip.hl svg { color: #fff; }
@@ -365,38 +363,38 @@
   <div class="revhead" data-reveal>
     <div class="revscore">
       <span class="big" data-count="4.8">4,8</span>
-      <span class="meta"><span class="st"><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg></span>494 reviews op Google</span>
+      <span class="meta"><span class="st" role="img" aria-label="4.8 van 5 sterren"><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg></span>494 reviews op Google</span>
     </div>
     <a class="btn btn-glass" href="https://www.google.com/maps/search/?api=1&query=Snelvakman%20Eindhoven" target="_blank" rel="noopener"><svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M23.5 12.3c0-.9-.1-1.5-.3-2.2H12v4.1h6.5c-.1 1.1-.8 2.7-2.4 3.8l3.6 2.8c2.2-2 3.8-5 3.8-8.5z"/><path fill="#34A853" d="M12 24c3.2 0 6-1.1 7.9-2.9l-3.6-2.8c-1 .7-2.4 1.2-4.3 1.2-3.3 0-6-2.2-7-5.1l-3.7 2.9C3.3 21.2 7.3 24 12 24z"/><path fill="#FBBC05" d="M5 14.4c-.3-.8-.4-1.6-.4-2.4s.2-1.6.4-2.4L1.3 6.7C.5 8.3 0 10.1 0 12s.5 3.7 1.3 5.3L5 14.4z"/><path fill="#EA4335" d="M12 4.6c1.8 0 3 .8 3.7 1.4l3.2-3.1C17 1.1 15.2 0 12 0 7.3 0 3.3 2.8 1.3 6.7L5 9.6c1-2.9 3.7-5 7-5z"/></svg> Bekijk alle reviews</a>
   </div>
   <div class="revgrid" data-stagger>
     <div class="review">
-      <div class="st"><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg></div>
+      <div class="st" role="img" aria-label="5 van 5 sterren"><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg></div>
       <p>&ldquo;We hadden een schilder in Eindhoven nodig. Een beetje rond gezocht en kwam hier uit. Een afspraak gemaakt. Nadat de schilder een kijkje kwam doen en de kosten doorgegeven gingen wij akkoord. Ingepland wanneer ze konden beginnen. Op de afgesproken dag waren ze klaar. Het schilderwerk ziet er keurig uit. Ben ze dankbaar voor de service die we hebben gehad.&rdquo;</p>
       <div class="who"><span class="av">I</span> Irma Dekkers <span class="g"><svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M23.5 12.3c0-.9-.1-1.5-.3-2.2H12v4.1h6.5c-.1 1.1-.8 2.7-2.4 3.8l3.6 2.8c2.2-2 3.8-5 3.8-8.5z"/><path fill="#34A853" d="M12 24c3.2 0 6-1.1 7.9-2.9l-3.6-2.8c-1 .7-2.4 1.2-4.3 1.2-3.3 0-6-2.2-7-5.1l-3.7 2.9C3.3 21.2 7.3 24 12 24z"/><path fill="#FBBC05" d="M5 14.4c-.3-.8-.4-1.6-.4-2.4s.2-1.6.4-2.4L1.3 6.7C.5 8.3 0 10.1 0 12s.5 3.7 1.3 5.3L5 14.4z"/><path fill="#EA4335" d="M12 4.6c1.8 0 3 .8 3.7 1.4l3.2-3.1C17 1.1 15.2 0 12 0 7.3 0 3.3 2.8 1.3 6.7L5 9.6c1-2.9 3.7-5 7-5z"/></svg></span></div>
     </div>
     <div class="review">
-      <div class="st"><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg></div>
+      <div class="st" role="img" aria-label="5 van 5 sterren"><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg></div>
       <p>&ldquo;Onze toilet is in een week gerenoveerd naar volle tevredenheid. Goede en vriendelijke vakmensen en communicatie via wattsapp efficient en altijd prompte reactie. Zeer aan te bevelen&rdquo;</p>
       <div class="who"><span class="av">P</span> paul <span class="g"><svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M23.5 12.3c0-.9-.1-1.5-.3-2.2H12v4.1h6.5c-.1 1.1-.8 2.7-2.4 3.8l3.6 2.8c2.2-2 3.8-5 3.8-8.5z"/><path fill="#34A853" d="M12 24c3.2 0 6-1.1 7.9-2.9l-3.6-2.8c-1 .7-2.4 1.2-4.3 1.2-3.3 0-6-2.2-7-5.1l-3.7 2.9C3.3 21.2 7.3 24 12 24z"/><path fill="#FBBC05" d="M5 14.4c-.3-.8-.4-1.6-.4-2.4s.2-1.6.4-2.4L1.3 6.7C.5 8.3 0 10.1 0 12s.5 3.7 1.3 5.3L5 14.4z"/><path fill="#EA4335" d="M12 4.6c1.8 0 3 .8 3.7 1.4l3.2-3.1C17 1.1 15.2 0 12 0 7.3 0 3.3 2.8 1.3 6.7L5 9.6c1-2.9 3.7-5 7-5z"/></svg></span></div>
     </div>
     <div class="review">
-      <div class="st"><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg></div>
+      <div class="st" role="img" aria-label="5 van 5 sterren"><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg></div>
       <p>&ldquo;Dit schildersbedrijf kon onze woning direct instap klaar maken. Ze zijn hun woord nagekomen en wij konden volgens planning verhuizen. Super fijn!&rdquo;</p>
       <div class="who"><span class="av">M</span> Marion Koenders <span class="g"><svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M23.5 12.3c0-.9-.1-1.5-.3-2.2H12v4.1h6.5c-.1 1.1-.8 2.7-2.4 3.8l3.6 2.8c2.2-2 3.8-5 3.8-8.5z"/><path fill="#34A853" d="M12 24c3.2 0 6-1.1 7.9-2.9l-3.6-2.8c-1 .7-2.4 1.2-4.3 1.2-3.3 0-6-2.2-7-5.1l-3.7 2.9C3.3 21.2 7.3 24 12 24z"/><path fill="#FBBC05" d="M5 14.4c-.3-.8-.4-1.6-.4-2.4s.2-1.6.4-2.4L1.3 6.7C.5 8.3 0 10.1 0 12s.5 3.7 1.3 5.3L5 14.4z"/><path fill="#EA4335" d="M12 4.6c1.8 0 3 .8 3.7 1.4l3.2-3.1C17 1.1 15.2 0 12 0 7.3 0 3.3 2.8 1.3 6.7L5 9.6c1-2.9 3.7-5 7-5z"/></svg></span></div>
     </div>
     <div class="review">
-      <div class="st"><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg></div>
+      <div class="st" role="img" aria-label="5 van 5 sterren"><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg></div>
       <p>&ldquo;Via Snelvakman een fijne en betrouwbare schilder voor binnenwerk ingeschakeld. Prima werk geleverd voor een prima prijs.&rdquo;</p>
       <div class="who"><span class="av">D</span> Dirk Bruinsma <span class="g"><svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M23.5 12.3c0-.9-.1-1.5-.3-2.2H12v4.1h6.5c-.1 1.1-.8 2.7-2.4 3.8l3.6 2.8c2.2-2 3.8-5 3.8-8.5z"/><path fill="#34A853" d="M12 24c3.2 0 6-1.1 7.9-2.9l-3.6-2.8c-1 .7-2.4 1.2-4.3 1.2-3.3 0-6-2.2-7-5.1l-3.7 2.9C3.3 21.2 7.3 24 12 24z"/><path fill="#FBBC05" d="M5 14.4c-.3-.8-.4-1.6-.4-2.4s.2-1.6.4-2.4L1.3 6.7C.5 8.3 0 10.1 0 12s.5 3.7 1.3 5.3L5 14.4z"/><path fill="#EA4335" d="M12 4.6c1.8 0 3 .8 3.7 1.4l3.2-3.1C17 1.1 15.2 0 12 0 7.3 0 3.3 2.8 1.3 6.7L5 9.6c1-2.9 3.7-5 7-5z"/></svg></span></div>
     </div>
     <div class="review">
-      <div class="st"><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg></div>
+      <div class="st" role="img" aria-label="5 van 5 sterren"><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg></div>
       <p>&ldquo;Plafond geschilderd. Zaten overal donkere plekken. Ziet er nu netjes wit uit.&rdquo;</p>
       <div class="who"><span class="av">L</span> Lisa de Bruijn <span class="g"><svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M23.5 12.3c0-.9-.1-1.5-.3-2.2H12v4.1h6.5c-.1 1.1-.8 2.7-2.4 3.8l3.6 2.8c2.2-2 3.8-5 3.8-8.5z"/><path fill="#34A853" d="M12 24c3.2 0 6-1.1 7.9-2.9l-3.6-2.8c-1 .7-2.4 1.2-4.3 1.2-3.3 0-6-2.2-7-5.1l-3.7 2.9C3.3 21.2 7.3 24 12 24z"/><path fill="#FBBC05" d="M5 14.4c-.3-.8-.4-1.6-.4-2.4s.2-1.6.4-2.4L1.3 6.7C.5 8.3 0 10.1 0 12s.5 3.7 1.3 5.3L5 14.4z"/><path fill="#EA4335" d="M12 4.6c1.8 0 3 .8 3.7 1.4l3.2-3.1C17 1.1 15.2 0 12 0 7.3 0 3.3 2.8 1.3 6.7L5 9.6c1-2.9 3.7-5 7-5z"/></svg></span></div>
     </div>
     <div class="review">
-      <div class="st"><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg></div>
+      <div class="st" role="img" aria-label="5 van 5 sterren"><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc531" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg></div>
       <p>&ldquo;Wij worden heel snel geholpen 🙏&rdquo;</p>
       <div class="who"><span class="av">N</span> Nas <span class="g"><svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M23.5 12.3c0-.9-.1-1.5-.3-2.2H12v4.1h6.5c-.1 1.1-.8 2.7-2.4 3.8l3.6 2.8c2.2-2 3.8-5 3.8-8.5z"/><path fill="#34A853" d="M12 24c3.2 0 6-1.1 7.9-2.9l-3.6-2.8c-1 .7-2.4 1.2-4.3 1.2-3.3 0-6-2.2-7-5.1l-3.7 2.9C3.3 21.2 7.3 24 12 24z"/><path fill="#FBBC05" d="M5 14.4c-.3-.8-.4-1.6-.4-2.4s.2-1.6.4-2.4L1.3 6.7C.5 8.3 0 10.1 0 12s.5 3.7 1.3 5.3L5 14.4z"/><path fill="#EA4335" d="M12 4.6c1.8 0 3 .8 3.7 1.4l3.2-3.1C17 1.1 15.2 0 12 0 7.3 0 3.3 2.8 1.3 6.7L5 9.6c1-2.9 3.7-5 7-5z"/></svg></span></div>
     </div>

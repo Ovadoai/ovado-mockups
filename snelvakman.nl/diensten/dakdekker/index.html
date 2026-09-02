@@ -29,10 +29,10 @@
   a, button, summary { cursor: pointer; }
   a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px solid var(--cta); outline-offset: 3px; border-radius: 8px; }
   .wrap { max-width: 1160px; margin: 0 auto; padding: 0 28px; }
-  section { padding: 130px 0; }
-  @media (max-width: 880px) { section { padding: 84px 0; } }
+  section { padding: 92px 0; }
+  @media (max-width: 880px) { section { padding: 60px 0; } }
   h2 { font-size: clamp(30px, 4vw, 46px); font-weight: 700; margin-bottom: 16px; line-height: 1.08; }
-  .lead-p { color: var(--muted); max-width: 580px; font-size: 17.5px; margin-bottom: 56px; }
+  .lead-p { color: var(--muted); max-width: 580px; font-size: 17.5px; margin-bottom: 40px; }
 
   .btn { display: inline-flex; align-items: center; gap: 10px; padding: 16px 30px; border-radius: 999px;
     font-weight: 600; font-size: 15.5px; text-decoration: none; letter-spacing: 0.01em;
@@ -57,7 +57,7 @@
     border-radius: 999px; padding: 8px 10px 8px 18px; max-width: 100%; }
   .nav .brand { display: flex; align-items: center; text-decoration: none; margin-right: 10px; }
   .nav .brand img { max-height: 34px; max-width: 150px; object-fit: contain; }
-  .nav .wordmark { font-family: 'Outfit'; font-weight: 800; font-size: 18px; color: var(--ink); white-space: nowrap; }
+  .nav .wordmark { font-family: 'Outfit'; font-weight: 800; font-size: 18px; color: var(--ink); white-space: nowrap; max-width: 200px; overflow: hidden; text-overflow: ellipsis; }
   .nav .wordmark em { color: var(--accent); font-style: normal; }
   .nav .links { display: flex; gap: 2px; }
   .nav .links a { color: var(--body); text-decoration: none; font-weight: 600; font-size: 14.5px;
@@ -69,7 +69,7 @@
   .ctaband { background: linear-gradient(120deg, var(--accent-dark), var(--accent) 55%, color-mix(in srgb, var(--accent) 60%, black)); position: relative; overflow: hidden; }
   .ctaband::before { content: ''; position: absolute; inset: -40%;
     background: radial-gradient(circle at 75% 20%, rgba(255,255,255,0.14), transparent 45%); }
-  .ctaband .wrap { position: relative; padding-top: 110px; padding-bottom: 110px; text-align: center; }
+  .ctaband .wrap { position: relative; padding-top: 84px; padding-bottom: 84px; text-align: center; }
   .ctaband h2 { color: #fff; font-size: clamp(32px, 4.6vw, 54px); max-width: 900px; margin: 0 auto 18px; }
   .ctaband p { color: rgba(255,255,255,0.8); margin-bottom: 40px; font-size: 17.5px; }
 
@@ -96,7 +96,7 @@
     *, *::before, *::after { animation: none !important; transition: none !important; }
   }
   .subhero { background: radial-gradient(ellipse at 80% 0%, color-mix(in srgb, #0A7CC9 30%, var(--ink)), transparent 55%), var(--ink); color: #fff; }
-  .subhero .wrap { padding: 170px 28px 90px; max-width: 1000px; }
+  .subhero .wrap { padding: 145px 28px 72px; max-width: 1000px; }
   .subhero .crumb { font-size: 14.5px; margin-bottom: 18px; }
   .subhero .crumb a { color: rgba(255,255,255,0.75); text-decoration: none; }
   .subhero .crumb a:hover { color: #fff; }
