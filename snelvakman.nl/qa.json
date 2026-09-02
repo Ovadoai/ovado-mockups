@@ -1,43 +1,51 @@
 {
-  "score": 84,
+  "score": 79,
   "sections": [
     {
       "name": "hero",
-      "score": 88
+      "score": 88,
+      "issue": ""
     },
     {
       "name": "werkwijze",
-      "score": 82
+      "score": 84,
+      "issue": ""
     },
     {
       "name": "diensten",
-      "score": 78,
-      "issue": "De zes dienstkaarten leunen op vlakke, lichtblauwe icoonvlakken die als placeholders ogen — dit is het meest template-achtige deel van de pagina. Vervang de icoonvlakken door echte werkfoto's per dienst (loodgieter, dakdekker, tegelzetter), of geef de iconen meer karakter en contrast, zodat het grid niet als een standaard AI-layout leest."
+      "score": 70,
+      "issue": "Acht dienstkaarten in een driekoloms-grid laten op desktop een lege plek in de laatste rij (2 kaarten + gat), wat onevenwichtig oogt. Bovendien is de bovenste helft van elke kaart een identiek lichtblauw sier-vlak met alleen een klein icoon: dat leest als niet-ingevulde placeholder en geeft een template-gevoel. Oplossing: vierkoloms-grid (2x4) of de laatste twee kaarten breed maken, en de blauwe vlakken vervangen door echte dienst-foto's uit de subpagina-oogst of door het icoon zonder vlak."
     },
     {
       "name": "over-ons",
-      "score": 84
+      "score": 72,
+      "issue": "Alleen gecentreerde tekst met vier vinkjes, geen beeld, geen cijfers, geen gezicht. Tussen de rijke werkwijze/diensten en het donkere reviews-blok voelt dit kaal en generiek. Oplossing: tweekoloms (tekst + team-/werkfoto of een cijferblok zoals '494 reviews · 4,8 · 7 dagen per week') zodat het blok visueel gewicht krijgt."
     },
     {
       "name": "reviews",
-      "score": 90
+      "score": 88,
+      "issue": ""
     },
     {
       "name": "werkgebied",
-      "score": 85
+      "score": 82,
+      "issue": ""
     },
     {
       "name": "faq",
-      "score": 84
+      "score": 80,
+      "issue": ""
     },
     {
       "name": "contact",
-      "score": 85
+      "score": 82,
+      "issue": ""
     },
     {
       "name": "mobiel",
-      "score": 86
+      "score": 80,
+      "issue": ""
     }
   ],
-  "oordeel": "Een overduidelijke upgrade: de oude site heeft een gigantisch leeg middenvlak, kale tekstreviews en een gedateerde uitstraling, terwijl de mockup een strakke structuur, echte Google-reviews met 4.8-badge, volledig werkgebied en een nette FAQ toont — alle plaatsnamen en content van de oude site zijn overgenomen. Mobiel rendert schoon zonder horizontaal scrollen en met goed stapelende secties. Enige echte zwakte is het dienstengrid met vlakke placeholder-achtige icoonvlakken; met echte werkfoto's daar zou dit richting de 90 gaan, maar ook nu is het een no-brainer voor de eigenaar."
+  "oordeel": "De huidige site is feitelijk kapot: monospace stap-tekst over de hero-foto, een halve pagina leeg wit/blauw vlak en reviews als platte tekst. De mockup is daartegenover een duidelijke sprong: sterke donkere hero met rating en drie CTA's, echte reviews in een donker hoofdstuk, alle plaatsnamen als pills, FAQ en contact aanwezig, en mobiel stapelt netjes zonder horizontaal scrollen. Twee zwaktes drukken de score: het dienstengrid met een leeg gat en repetitieve placeholder-vlakken, en een kaal tekst-only over-ons-blok; de review-inzendformulier van de oude site is weggelaten, wat acceptabel is maar te vermelden."
 }
